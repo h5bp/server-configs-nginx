@@ -9,7 +9,7 @@ types {
     application/x-javascript              js;
     application/atom+xml                  atom;
 
-    text/cache-manifest                   manifest;
+    text/cache-manifest                   manifest appcache;
     text/mathml                           mml;
     text/plain                            txt;
     text/vnd.sun.j2me.app-descriptor      jad;
