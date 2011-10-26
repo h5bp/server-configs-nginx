@@ -77,7 +77,7 @@ types {
     video/x-msvideo                       avi;
 
     application/vnd.ms-fontobject         eot;
-    font/truetype                         ttf;
+    application/x-font-ttf                ttf ttc;
     font/opentype                         otf;
     font/woff                             woff;
 }
