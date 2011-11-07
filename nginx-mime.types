@@ -3,9 +3,11 @@
 types {
     text/html                             html htm shtml;
     text/css                              css;
+    # application/rss+xml causes some browsers to start a download
     text/xml                              xml rss;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
+    # http://www.rfc-editor.org/rfc/rfc4329.txt
     application/javascript                js;
     application/atom+xml                  atom;
 
@@ -32,11 +34,16 @@ types {
     application/postscript                ps eps ai;
     application/rtf                       rtf;
     application/vnd.ms-excel              xls;
+    application/vnd.ms-fontobject         eot;
     application/vnd.ms-powerpoint         ppt;
     application/vnd.wap.wmlc              wmlc;
     application/vnd.wap.xhtml+xml         xhtml;
+    application/vnd.google-earth.kml+xml  kml;
+    application/vnd.google-earth.kmz      kmz;
+    application/x-7z-compressed           7z;
     application/x-chrome-extension        crx;
     application/x-cocoa                   cco;
+    application/x-font-ttf                ttf ttc;
     application/x-java-archive-diff       jardiff;
     application/x-java-jnlp-file          jnlp;
     application/x-makeself                run;
@@ -57,12 +64,12 @@ types {
     application/octet-stream              dmg;
     application/octet-stream              iso img;
     application/octet-stream              msi msp msm;
-    application/octet-stream              safariextz
+    application/octet-stream              safariextz;
 
     audio/midi                            mid midi kar;
     audio/mpeg                            mp3;
-    audio/x-realaudio                     ra;
     audio/ogg                             oga ogg;
+    audio/x-realaudio                     ra;
     audio/x-wav                           wav;
 
     video/3gpp                            3gpp 3gp;
@@ -76,8 +83,6 @@ types {
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
 
-    application/vnd.ms-fontobject         eot;
-    application/x-font-ttf                ttf ttc;
     font/opentype                         otf;
     font/woff                             woff;
 }
