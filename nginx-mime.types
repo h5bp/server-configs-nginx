@@ -37,7 +37,7 @@ types {
     application/vnd.ms-fontobject         eot;
     application/vnd.ms-powerpoint         ppt;
     application/vnd.wap.wmlc              wmlc;
-    application/vnd.wap.xhtml+xml         xhtml;
+    application/xhtml+xml                 xhtml;
     application/vnd.google-earth.kml+xml  kml;
     application/vnd.google-earth.kmz      kmz;
     application/x-7z-compressed           7z;
