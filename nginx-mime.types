@@ -7,6 +7,7 @@ types {
     text/xml                              xml rss;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
+    application/json                      json;
     # http://www.rfc-editor.org/rfc/rfc4329.txt
     application/javascript                js;
     application/atom+xml                  atom;
