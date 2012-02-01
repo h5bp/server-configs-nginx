@@ -4,7 +4,7 @@ types {
     text/html                             html htm shtml;
     text/css                              css;
     # application/rss+xml causes some browsers to start a download
-    text/xml                              xml rss;
+    text/xml                              rss;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
     application/json                      json;
@@ -28,6 +28,7 @@ types {
     image/x-jng                           jng;
     image/x-ms-bmp                        bmp;
 
+    application/xml                       xml;
     application/java-archive              jar war ear;
     application/mac-binhex40              hqx;
     application/msword                    doc;
