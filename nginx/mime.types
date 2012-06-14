@@ -88,6 +88,6 @@ types {
   # Webfonts
   application/vnd.ms-fontobject         eot;
   application/x-font-ttf                ttf ttc;
-  font/opentype                         otf;
+  application/x-font-opentype           otf;
   application/x-font-woff               woff;
 }
