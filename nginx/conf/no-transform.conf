@@ -1,0 +1,2 @@
+# Prevent mobile network providers from modifying your site
+add_header "Cache-Control" "no-transform";
