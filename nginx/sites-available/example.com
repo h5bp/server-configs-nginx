@@ -5,6 +5,7 @@
 server {
   # don't forget to tell on which port this server listens
   listen 80;
+
   # listen on the www host
   server_name www.example.com;
 
@@ -31,5 +32,4 @@ server {
 
   # Include the component config parts for h5bp
   include conf/h5bp.conf;
-
 }
