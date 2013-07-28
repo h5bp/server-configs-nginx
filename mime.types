@@ -20,7 +20,7 @@ types {
   image/x-jng                           jng;
 
 # JavaScript
-  application/javascript                js jsonp;
+  application/javascript                js;
   application/json                      json;
 
 # Manifest files
