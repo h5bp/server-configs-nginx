@@ -85,6 +85,7 @@ types {
   application/x-stuffit                 sit;
   application/x-tcl                     tcl tk;
   application/x-x509-ca-cert            der pem crt;
+  application/x-bittorrent              torrent;
   application/zip                       zip;
 
   application/octet-stream              bin exe dll;
