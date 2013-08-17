@@ -1,4 +1,4 @@
-# Contributing to Apache Server Configs
+# Contributing to Nginx Server Configs
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -11,7 +11,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/h5bp/server-configs-apache/issues) is
+The [issue tracker](https://github.com/h5bp/server-configs-nginx/issues) is
 the preferred channel for [bug reports](#bugs), [features requests](#features)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
@@ -42,7 +42,7 @@ Guidelines for bug reports:
 
 A good bug report shouldn't leave others needing to chase you up for more
 information. Please try to be as detailed as possible in your report. What is
-your environment? What steps will reproduce the issue? What version of Apache
+your environment? What steps will reproduce the issue? What version of Nginx
 experiences the problem? What would you expect to be the outcome? All these
 details will help people to fix any potential bugs.
 
@@ -95,11 +95,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/server-configs-apache.git
+   git clone https://github.com/<your-username>/server-configs-nginx.git
    # Navigate to the newly cloned directory
-   cd server-configs-apache
+   cd server-configs-nginx
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/h5bp/server-configs-apache
+   git remote add upstream https://github.com/h5bp/server-configs-nginx
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
