@@ -16,7 +16,7 @@ types {
   image/tiff                            tif tiff;
   image/vnd.wap.wbmp                    wbmp;
   image/webp                            webp;
-  image/x-icon                          ico;
+  image/x-icon                          ico cur;
   image/x-jng                           jng;
 
 # JavaScript
