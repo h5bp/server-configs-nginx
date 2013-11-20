@@ -31,5 +31,5 @@ server {
   error_page 404 /404.html;
 
   # Include the component config parts for h5bp
-  include conf/h5bp.conf;
+  include h5bp/h5bp.conf;
 }
