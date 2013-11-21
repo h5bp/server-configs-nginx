@@ -14,9 +14,9 @@ server {
 }
 
 server {
-  # listen 80 default_server deferred; # for Linux
-  # listen 80 default_server accept_filter=httpready; # for FreeBSD
-  listen 80 default_server;
+  # listen 80 deferred; # for Linux
+  # listen 80 accept_filter=httpready; # for FreeBSD
+  listen 80;
 
   # The host name to respond to
   server_name example.com;
@@ -31,5 +31,5 @@ server {
   error_page 404 /404.html;
 
   # Include the component config parts for h5bp
-  include conf/h5bp.conf;
+  include h5bp/h5bp.conf;
 }
