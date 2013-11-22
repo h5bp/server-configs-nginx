@@ -61,10 +61,6 @@ This directory contains config snippets (mixins) to be included as desired.
 There is more information available about the individual files in
 [About h5bp](h5bp.md).
 
-### doc
-
-The project documentation.
-
 ### sites-available
 
 This directory should contain all of the server definitions that are available
