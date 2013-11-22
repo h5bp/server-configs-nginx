@@ -1,11 +1,11 @@
 [Nginx Server Configs homepage](https://github.com/h5bp/server-configs-nginx)
  | [Documentation table of contents](TOC.md)
 
-# Requirements
+# Usage
+
+## Requirements
 
  * nginx version 1.2.1+
-
-# Usage
 
 There are two ways to make use of the contents of this repository, as a reference
 or directly as the source for nginx to run from. A number of config snippets are
@@ -31,11 +31,8 @@ To use directly, replace the nginx config directory with this repository. for ex
     # install-specific edits
     /etc/init.d/nginx start
 
-Install specific edits will vary from server to user, minimal steps would be:
-
- 1. verify the config in `nginx.conf` is appropriate - especially the `user` directive
- 2. Copy `sites-available/example.com` to `sites-available/mysite.com` and edit appropriately
- 3. Activate the new site by linking `mysite.com` into the `sites-enabled` directory
+Install specific edits will vary from server to user, see [Getting started](getting-started.md)
+for a description of the required steps.
 
 ## Basic structure
 
