@@ -1,5 +1,16 @@
 # [Nginx Server Configs](https://github.com/h5bp/server-configs-nginx)
 
+Nginx server configs is is a collection of configuration snippets that can help
+your server improve the web site's performance and security, while also
+ensuring that resources are served with the correct content-type and are
+accessible, if needed, even cross-domain.
+
+## Documentation
+
+The [documentation](/h5bp/server-configs-nginx/blob/master/doc) is bundled with
+the project, which makes it readily available for offline reading and provides a
+useful starting point for any documentation you want to write about your project.
+
 ## Contributing to this project
 
 Anyone and everyone is welcome to contribute, but please take a moment to review
