@@ -30,6 +30,6 @@ server {
   # Custom 404 page
   error_page 404 /404.html;
 
-  # Include the component config parts for h5bp
-  include h5bp/h5bp.conf;
+  # Include the basic h5bp config set
+  include h5bp/basic.conf;
 }
