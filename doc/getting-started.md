@@ -34,6 +34,16 @@ where logs should be stored:
     // /etc/nginx/nginx.conf
     error_log /var/log/nginx/error.log warn;
 
+And:
+
+    // /etc/nginx/h5bp/expires.conf
+    access_log logs/static.log;
+
+To:
+
+    // /etc/nginx/h5bp/expires.conf
+    access_log /var/log/nginx/static.log;
+
 Or, setup a symlink to point at the right place:
 
     cd /etc/nginx
