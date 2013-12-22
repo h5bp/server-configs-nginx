@@ -7,7 +7,7 @@ accessible, if needed, even cross-domain.
 
 ## Documentation
 
-The [documentation](/h5bp/server-configs-nginx/blob/master/doc) is bundled with
+The [documentation](/h5bp/server-configs-nginx/blob/master/doc/TOC.md) is bundled with
 the project, which makes it readily available for offline reading and provides a
 useful starting point for any documentation you want to write about your project.
 
