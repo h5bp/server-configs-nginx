@@ -3,11 +3,11 @@
 
 # Getting started
 
-Using the Nginx server configs repo directly has a few required steps to be able to work
+Using the Nginx server configs repo directly has a few required steps to be able to work.
 
 ## Check `nginx.conf` settings
 
-The first thing to check is that the `nginx.conf` file contains approrpriate values for
+The first thing to check is that the `nginx.conf` file contains appropriate values for
 your specific install. The web user varies with distribution, in most cases compare to
 the config file originally present, and use the same user:
 
@@ -22,7 +22,7 @@ Apply to the runtime config file:
 
 ## Configure logs and pid file
 
-The location of logs also veries from system to system. To account for this the `nginx.conf`
+The location of logs also varies from system to system. To account for this the `nginx.conf`
 file uses a relative path for logs:
 
     // /etc/nginx/nginx.conf
