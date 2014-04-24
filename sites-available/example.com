@@ -23,7 +23,8 @@ server {
 
   # Path for static files
   root /sites/example.com/public;
-
+  index index.html index.htm;
+  
   #Specify a charset
   charset utf-8;
 
