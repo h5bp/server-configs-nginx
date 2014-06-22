@@ -67,3 +67,5 @@ Activate the new site by linking `yourdomainname.com` into the `sites-enabled` d
 This will make the server active the next time nginx (re)starts.
 
 ## Verify config and restart nginx
+
+    nginx -tt && service nginx restart
