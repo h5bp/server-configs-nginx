@@ -69,6 +69,18 @@ This will make the server active the next time nginx (re)starts.
 ## Verify config and restart nginx
 Verify the config and restart nginx to apply the changes.
 
-	nginx -tt && service nginx restart
+To verify nginx config (Tests default nginx config file)
 
-This will verify the config and on successful verification it'll restart the nginx, otherwise throws error and stops from restarting nginx.
+	nginx -t 
+
+**OR**
+
+To verify a particular nginx config file
+	
+	nginx -t -c nginx.conf	
+	
+This will test the nginx config file and throws error if any. Otherwise test is successful and you can restart nginx.
+
+Finally restart nginx to apply the changes
+	
+	/etc/init.d/nginx restart
