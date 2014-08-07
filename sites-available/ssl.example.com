@@ -7,7 +7,7 @@ server {
   # listen on both hosts
   server_name example.com www.example.com;
 
-  include h5bp/direcive-only/ssl.conf
+  include h5bp/direcive-only/ssl.conf;
 
   # and redirect to the https host (declared below)
   # avoiding http://www -> https://www -> https:// chain.
@@ -20,7 +20,7 @@ server {
   # listen on the wrong host
   server_name www.example.com;
 
-  include h5bp/direcive-only/ssl.conf
+  include h5bp/direcive-only/ssl.conf;
 
   # and redirect to the non-www host (declared below)
   return 301 https://example.com$request_uri;
@@ -32,7 +32,7 @@ server {
   # The host name to respond to
   server_name example.com;
 
-  include h5bp/direcive-only/ssl.conf
+  include h5bp/direcive-only/ssl.conf;
 
   # Path for static files
   root /sites/example.com/public;
