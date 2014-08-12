@@ -53,7 +53,7 @@ types {
 
 # Web fonts
   application/font-woff                 woff;
-  application/font-woff                 woff2;
+  application/font-woff2                woff2;
   application/vnd.ms-fontobject         eot;
   application/x-font-ttf                ttc ttf;
   font/opentype                         otf;
