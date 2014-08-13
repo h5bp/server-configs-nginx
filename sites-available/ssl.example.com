@@ -2,12 +2,11 @@
 # the right one -- http://wiki.nginx.org/Pitfalls#Server_Name
 #
 server {
+  listen [::]:80;
   listen 80;
 
   # listen on both hosts
   server_name example.com www.example.com;
-
-  include h5bp/direcive-only/ssl.conf;
 
   # and redirect to the https host (declared below)
   # avoiding http://www -> https://www -> https:// chain.
@@ -15,24 +14,28 @@ server {
 }
 
 server {
+  listen [::]:443 ssl spdy;
   listen 443 ssl spdy;
 
   # listen on the wrong host
   server_name www.example.com;
 
-  include h5bp/direcive-only/ssl.conf;
+  include h5bp/directive-only/ssl.conf;
+  include h5bp/directive-only/spdy.conf;
 
   # and redirect to the non-www host (declared below)
   return 301 https://example.com$request_uri;
 }
 
 server {
+  listen [::]:443 ssl spdy;
   listen 443 ssl spdy;
 
   # The host name to respond to
   server_name example.com;
 
-  include h5bp/direcive-only/ssl.conf;
+  include h5bp/directive-only/ssl.conf;
+  include h5bp/directive-only/spdy.conf;
 
   # Path for static files
   root /sites/example.com/public;

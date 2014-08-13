@@ -9,5 +9,11 @@ server {
   listen [::]:80 default_server;
   listen 80 default_server;
 
+  listen [::]:443 ssl spdy default_server;
+  listen 443 ssl spdy default_server;
+
+  include h5bp/directive-only/ssl.conf;
+  include h5bp/directive-only/spdy.conf;
+
   return 444;
 }
