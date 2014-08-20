@@ -16,6 +16,7 @@ server {
 
 server {
   listen 443 ssl spdy;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains;";
 
   # listen on the wrong host
   server_name www.example.com;
@@ -28,6 +29,7 @@ server {
 
 server {
   listen 443 ssl spdy;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubdomains;";
 
   # The host name to respond to
   server_name example.com;
