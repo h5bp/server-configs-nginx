@@ -4,7 +4,7 @@
 # the right one -- http://wiki.nginx.org/Pitfalls#Server_Name
 server {
   # don't forget to tell on which port this server listens
-  listen [::]:80 ipv6only=on;
+  listen [::]:80;
   listen 80;
 
   # listen on the www host
@@ -17,7 +17,7 @@ server {
 server {
   # listen 80 deferred; # for Linux
   # listen 80 accept_filter=httpready; # for FreeBSD
-  listen [::]:80 ipv6only=on;
+  listen [::]:80;
   listen 80;
 
   # The host name to respond to
