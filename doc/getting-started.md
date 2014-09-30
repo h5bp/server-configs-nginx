@@ -18,7 +18,7 @@ Apply to the runtime config file:
 
     // /etc/nginx/nginx.conf
 	#user www www;
-	user www-data-www-data;
+	user www-data www-data;
 
 ## Configure logs and pid file
 
