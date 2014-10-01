@@ -2,6 +2,7 @@
 # the right one -- http://wiki.nginx.org/Pitfalls#Server_Name
 #
 server {
+  listen [::]:80;
   listen 80;
 
   # listen on both hosts
@@ -15,6 +16,7 @@ server {
 }
 
 server {
+  listen [::]:443 ssl spdy;
   listen 443 ssl spdy;
 
   # listen on the wrong host
@@ -27,6 +29,7 @@ server {
 }
 
 server {
+  listen [::]:443 ssl spdy;
   listen 443 ssl spdy;
 
   # The host name to respond to
