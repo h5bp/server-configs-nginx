@@ -51,6 +51,7 @@ This requires implementing server-side logic to generate links of the form:
     http://example.com/protected/url.ext?md5=hash&expires=timestamp
 
 where:
+
 	hash = md5({timestamp}/protected/url.ext{clientip} secret)
 
 "secret" should be application-specific and needs to match in the nginx config,
