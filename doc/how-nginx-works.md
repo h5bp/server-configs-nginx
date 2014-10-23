@@ -11,7 +11,9 @@ which may trip up new users.
 ## Nginx will only use one location block
 
 A [location block (directive)](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
-defines the behavior for a given request which matches the location url pattern.
+defines the behavior for a given request which matches the location url pattern. The block used
+is whichever is the most specific for the given request, the rules for
+precedene can be found in [Nginx's wiki](http://wiki.nginx.org/HttpCoreModule#location).
 
 It is very important when writing nginx configuration files to understand that
 only one location block will be used by Nginx. When in doubt a useful technique
