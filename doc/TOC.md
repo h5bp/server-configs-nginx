@@ -9,6 +9,10 @@
 * [How Nginx works](how-nginx-works.md) —Understanding nginx, and how it differs from other webservers.
 * [Common problems](common-problems.md) —Dealing with commonly-encounterederrors.
 
+## Example tasks
+
+* [Hotlink protection](examples/hotlink-protection.md)
+
 ## Related projects
 
 * [HTML5 Boilerplate](http://html5boilerplate.com) — professional front-end
