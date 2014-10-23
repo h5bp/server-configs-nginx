@@ -5,6 +5,7 @@
 ## Getting started
 
 * [Usage](usage.md) — Overview of the project contents.
+* [Nginx.conf](nginx-conf.md) —General introduction to the main config file.
 
 ## Related projects
 
