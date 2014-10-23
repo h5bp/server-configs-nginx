@@ -62,5 +62,5 @@ Consider the following server block:
 It might be expected that a request for `http://example.com/somefolder/doesnt-exist`
 would result in the contents of `/fallback.html` - but this is not the case. the
 `try_files` directive in the server context _only applies if no location block
-matches_, it is not a default which location blocks override.
+matches_, it is not a default which location blocks inherit.
 
