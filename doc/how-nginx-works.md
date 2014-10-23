@@ -42,7 +42,7 @@ will be included:
 There are some significant concequences to this behavior such as it _not_ being
 possible to build configuration files from small, overlapping, location blocks.
 
-## try_files in the server_context does not always apply
+## try_files in the server context does not always apply
 
 Consider the following server block:
 
