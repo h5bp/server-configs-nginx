@@ -41,3 +41,26 @@ will be included:
 
 There are some significant concequences to this behavior such as it _not_ being
 possible to build configuration files from small, overlapping, location blocks.
+
+## try_files in the server_context does not always apply
+
+Consider the following server block:
+
+	server {
+		listen 80;
+		server_name example.com;
+		root /var/www/example.com;
+
+		try_files $uri $uri/ /fallback.html;
+
+		location ~ ^/somefolder {
+			...
+		}
+
+	}
+
+It might be expected that a request for `http://example.com/somefolder/doesnt-exist`
+would result in the contents of `/fallback.html` - but this is not the case. the
+`try_files` directive in the server context _only applies if no location block
+matches_, it is not a default which location blocks override.
+
