@@ -5,7 +5,7 @@
 
 ## Requirements
 
- * nginx version 1.2.1+
+ * nginx version 1.6.0+
 
 There are two ways to make use of the contents of this repository, as a reference
 or directly as the source for nginx to run from. A number of config snippets are
