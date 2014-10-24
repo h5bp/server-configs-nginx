@@ -1,4 +1,10 @@
 #!/bin/bash
+################################################################################
+#
+# A utility script to write (nested) include statements
+# into the equivalent single config file.
+#
+################################################################################
 
 PROGNAME=${0##*/}
 PROGDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
