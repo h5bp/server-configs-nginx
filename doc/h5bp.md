@@ -84,7 +84,7 @@ This file contains sane-default config for setting up nginx to handle ssl traffi
 ### spdy.conf
 
 [SPDY](https://developers.google.com/speed/spdy/) is google's experimental network
-protocol. Nginx provides [experimental support(http://nginx.org/en/docs/http/ngx_http_spdy_module.html) for SPDY as of version 1.5.9.
+protocol. Nginx provides [experimental support](http://nginx.org/en/docs/http/ngx_http_spdy_module.html) for SPDY as of version 1.5.9.
 
 ### ssl-stapling.conf
 
