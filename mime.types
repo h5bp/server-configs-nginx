@@ -4,7 +4,7 @@ types {
   audio/midi                            mid midi kar;
   audio/mp4                             aac f4a f4b m4a;
   audio/mpeg                            mp3;
-  audio/ogg                             oga ogg;
+  audio/ogg                             oga ogg opus;
   audio/x-realaudio                     ra;
   audio/x-wav                           wav;
 
