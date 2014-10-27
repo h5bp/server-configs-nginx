@@ -13,6 +13,7 @@ types {
   image/gif                             gif;
   image/jpeg                            jpeg jpg;
   image/png                             png;
+  image/svg+xml                         svg svgz;
   image/tiff                            tif tiff;
   image/vnd.wap.wbmp                    wbmp;
   image/webp                            webp;
@@ -57,7 +58,6 @@ types {
   application/vnd.ms-fontobject         eot;
   application/x-font-ttf                ttc ttf;
   font/opentype                         otf;
-  image/svg+xml                         svg svgz;
 
 # Other
   application/java-archive              jar war ear;
