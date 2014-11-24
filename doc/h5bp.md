@@ -21,25 +21,25 @@ to be loaded in the server context (or, in a nested location block).
 
 ### cache-busting.conf
 
-Url based cache busting. This will route all requests of the form
+URL-based cache busting. This will route all requests of the form
 `/css/style.20120716.css` to `/css/style.css`
 
 Note that this file cannot/should not be used if any other location directives
-use the same/overlapping url patterns.
+use the same/overlapping URL patterns.
 
 ### cross-domain-fonts.conf
 
 This file contains headers for allowing cross-domain webfont requests.
 
 Note that this file cannot/should not be used if any other location directives
-use the same/overlapping url patterns.
+use the same/overlapping URL patterns.
 
 ### expires.conf
 
 This file contains some typical expire rules for use with static files.
 
 Note that this file cannot/should not be used if any other location directives
-use the same/overlapping url patterns.
+use the same/overlapping URL patterns.
 
 ### protect-system-files.conf
 
@@ -72,27 +72,27 @@ header to permit only a finite list of domains to make AJAX requests.
 [No transform headers](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.5)
  prevent mobile providers from modifying/optimizing served content. This file
 contains the directive only and should be included only when it is specifically
-desired for the server response to remain unmodifield.
+desired for the server response to remain unmodified.
 
 Note that adding this header to responses will also prevent `nginx_pagespeed`,
-if used, from optimizing html responses.
+if used, from optimizing HTML responses.
 
 ### ssl.conf
 
-This file contains sane-default config for setting up nginx to handle ssl traffic.
+This file contains sane-default config for setting up nginx to handle SSL traffic.
 
 ### spdy.conf
 
-[SPDY](https://developers.google.com/speed/spdy/) is google's experimental network
+[SPDY](https://developers.google.com/speed/spdy/) is Google's experimental network
 protocol. Nginx provides [experimental support](http://nginx.org/en/docs/http/ngx_http_spdy_module.html) for SPDY as of version 1.5.9.
 
 ### ssl-stapling.conf
 
 [OCSP staping](http://en.wikipedia.org/wiki/OCSP_stapling) relates to handling
 the revocation of SSL certificates, this config file turns on stapling using
-google's dns resolver.
+Google's DNS resolver.
 
 ### x-ua-compatible.conf
 
 This adds a header to force internet explorer to use the highest mode available.
-As of [Internet explorer version 11 this is nolonger necessary](http://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode).
+As of [Internet explorer version 11 this is no longer necessary](http://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode).
