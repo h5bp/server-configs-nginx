@@ -19,3 +19,4 @@
   template.
 * [Server configs](https://github.com/h5bp/server-configs) — Configs for
   other web servers.
+* [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/) — generate Mozilla Security recommended web server configs.
