@@ -81,6 +81,6 @@ To verify a particular nginx config file
 	
 This will test the nginx config file and throws error if any. Otherwise test is successful and you can restart nginx.
 
-Finally restart nginx to apply the changes
+Finally restart nginx to apply the changes. The `-s reload` flag means that it will send a signal to the main process to reload the configuration files. If it is valid, it starts accepting connections to the new configuration. The [documentation is more in depth](http://nginx.org/en/docs/beginners_guide.html#control)
 	
-	/etc/init.d/nginx restart
+	/etc/init.d/nginx -s restart
