@@ -81,6 +81,6 @@ To verify a particular nginx config file
 	
 This will test the nginx config file and throws error if any. Otherwise test is successful and you can restart nginx.
 
-Finally reload nginx to apply the changes. This means nginx will reload the configuration files and if it is valid, it starts accepting connections to the new configuration. The [documentation is more in depth](http://nginx.org/en/docs/beginners_guide.html#control)
+Finally reload nginx to apply the changes.
 	
 	/etc/init.d/nginx reload
