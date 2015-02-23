@@ -5,9 +5,9 @@
 ## Getting started
 
 * [Usage](usage.md) — Overview of the project contents.
-* [Nginx.conf](nginx-conf.md) —General introduction to the main config file.
-* [How Nginx works](how-nginx-works.md) —Understanding nginx, and how it differs from other webservers.
-* [Common problems](common-problems.md) —Dealing with commonly-encounterederrors.
+* [Nginx.conf](nginx-conf.md) — General introduction to the main config file.
+* [How Nginx works](how-nginx-works.md) — Understanding nginx, and how it differs from other webservers.
+* [Common problems](common-problems.md) — Dealing with commonly-encountered errors.
 
 ## Example tasks
 
