@@ -81,6 +81,6 @@ To verify a particular nginx config file
 	
 This will test the nginx config file and throws error if any. Otherwise test is successful and you can restart nginx.
 
-Finally restart nginx to apply the changes
+Finally reload nginx to apply the changes.
 	
-	/etc/init.d/nginx restart
+	/etc/init.d/nginx reload
