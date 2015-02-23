@@ -51,6 +51,7 @@ types {
 
 # Web feeds
   application/xml                       atom rdf rss xml;
+  application/xslt+xml                  xsl;
 
 # Web fonts
   application/font-woff                 woff;
