@@ -5,11 +5,13 @@ your server improve the web site's performance and security, while also
 ensuring that resources are served with the correct content-type and are
 accessible, if needed, even cross-domain.
 
+
 ## Documentation
 
 The [documentation](doc/TOC.md) is bundled with
 the project, which makes it readily available for offline reading and provides a
 useful starting point for any documentation you want to write about your project.
+
 
 ## Contributing to this project
 
@@ -19,6 +21,7 @@ the [contributing guidelines](CONTRIBUTING.md).
 * [Bug reports](CONTRIBUTING.md#bugs)
 * [Feature requests](CONTRIBUTING.md#features)
 * [Pull requests](CONTRIBUTING.md#pull-requests)
+
 
 ## Acknowledgements
 
@@ -32,6 +35,7 @@ This project is currently maintained by:
 |---|
 | [Andy Dawson](http://ad7six.com/) |
 
+
 ## License
 
-[MIT License](LICENSE.md)
+The code is available under the [MIT license](LICENSE.txt).
