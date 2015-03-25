@@ -1,5 +1,6 @@
 ### HEAD
 
+* Update `mime.types`.
 * Remove the mapping of `.manifest` files to the `text/cache-manifest` media type
   ([d7e0e1b](https://github.com/h5bp/server-configs-nginx/commit/d7e0e1b)).
 * Change media types for `.atom` and `.rss` files
