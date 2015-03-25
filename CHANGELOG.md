@@ -1,6 +1,9 @@
 ### HEAD
 
-* Update `mime.types`.
+* Update the list of resources to be compressed
+  ([d7e0e1b](https://github.com/h5bp/server-configs-nginx/commit/d7e0e1b)).
+* Update `mime.types`
+  ([0ac9958](https://github.com/h5bp/server-configs-nginx/commit/0ac9958)).
 * Remove the mapping of `.manifest` files to the `text/cache-manifest` media type
   ([d7e0e1b](https://github.com/h5bp/server-configs-nginx/commit/d7e0e1b)).
 * Change media types for `.atom` and `.rss` files
