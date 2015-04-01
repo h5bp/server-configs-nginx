@@ -130,6 +130,5 @@ types {
     text/vnd.wap.wml                      wml;
     text/vtt                              vtt;
     text/x-component                      htc;
-    text/x-vcard                          vcf;
 
 }
