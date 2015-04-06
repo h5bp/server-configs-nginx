@@ -1,5 +1,6 @@
 ### HEAD
 
+* Map the `.manifest` file extension to the `text/cache-manifest` media type.
 * Update the list of resources to be compressed
   ([d7e0e1b](https://github.com/h5bp/server-configs-nginx/commit/d7e0e1b)).
 * Update `mime.types`

@@ -19,6 +19,7 @@ types {
 
   # Manifest files
 
+    application/manifest+json             webmanifest;
     application/x-web-app-manifest+json   webapp;
     text/cache-manifest                   appcache;
 
