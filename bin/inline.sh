@@ -37,7 +37,7 @@ help_message() {
 
   Example:
     cd /etc/nginx
-    $PROGNAME h5bp/basics.conf
+    $PROGNAME h5bp/basic.conf
     ### h5bp/basic.conf START
 
     ### h5bp/directive-only/x-ua-compatible.conf START
