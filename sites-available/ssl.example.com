@@ -27,6 +27,11 @@ server {
 }
 
 server {
+
+  # listen [::]:443 ssl spdy accept_filter=dataready;  # for FreeBSD
+  # listen 443 ssl spdy accept_filter=dataready;  # for FreeBSD
+  # listen [::]:443 ssl spdy deferred;  # for Linux
+  # listen 443 ssl spdy deferred;  # for Linux
   listen [::]:443 ssl spdy;
   listen 443 ssl spdy;
 
