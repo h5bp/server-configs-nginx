@@ -39,7 +39,7 @@ will be included:
 	...
 	section: something location
 
-There are some significant concequences to this behavior such as it _not_ being
+There are some significant consequences to this behavior such as it _not_ being
 possible to build configuration files from small, overlapping, location blocks.
 
 ## try_files in the server context does not always apply
