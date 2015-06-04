@@ -22,7 +22,7 @@ specifically for web usage such as "www" "www-data".
 
 The webserver user, and file permissions for any application, should be defined/chosen
 following [the principle of least privilege](http://en.wikipedia.org/wiki/Principle_of_least_privilege)
-i.e., sufficient priveleges to function correctly but no more than that.
+i.e., sufficient privileges to function correctly but no more than that.
 
 ## worker_processes
 
