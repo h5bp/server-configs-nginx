@@ -225,5 +225,5 @@ application is the 404 page:
 
 _with this kind of setup it's necessary to explicitly define the php filename_.
 
-In this way after nginx has tried to server a (none existant) static file, it
+In this way after nginx has tried to serve a (none existant) static file, it
 will pass the request to the php application successfully.
