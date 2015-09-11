@@ -41,15 +41,15 @@ types {
     image/vnd.wap.wbmp                    wbmp;
     image/webp                            webp;
     image/x-jng                           jng;
-    video/3gpp                            3gpp 3gp;
-    video/mp4                             f4v f4p m4v mp4;
+    video/3gpp                            3gp 3gpp;
+    video/mp4                             f4p f4v m4v mp4;
     video/mpeg                            mpeg mpg;
     video/ogg                             ogv;
     video/quicktime                       mov;
     video/webm                            webm;
     video/x-flv                           flv;
     video/x-mng                           mng;
-    video/x-ms-asf                        asx asf;
+    video/x-ms-asf                        asf asx;
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
 
@@ -90,11 +90,11 @@ types {
 
   # Other
 
-    application/java-archive              jar war ear;
+    application/java-archive              ear jar war;
     application/mac-binhex40              hqx;
     application/octet-stream              bin deb dll dmg exe img iso msi msm msp safariextz;
     application/pdf                       pdf;
-    application/postscript                ps eps ai;
+    application/postscript                ai eps ps;
     application/rtf                       rtf;
     application/vnd.google-earth.kml+xml  kml;
     application/vnd.google-earth.kmz      kmz;
@@ -109,20 +109,20 @@ types {
     application/x-makeself                run;
     application/x-opera-extension         oex;
     application/x-perl                    pl pm;
-    application/x-pilot                   prc pdb;
+    application/x-pilot                   pdb prc;
     application/x-rar-compressed          rar;
     application/x-redhat-package-manager  rpm;
     application/x-sea                     sea;
     application/x-shockwave-flash         swf;
     application/x-stuffit                 sit;
     application/x-tcl                     tcl tk;
-    application/x-x509-ca-cert            der pem crt;
+    application/x-x509-ca-cert            crt der pem;
     application/x-xpinstall               xpi;
     application/xhtml+xml                 xhtml;
     application/xslt+xml                  xsl;
     application/zip                       zip;
     text/css                              css;
-    text/html                             html htm shtml;
+    text/html                             htm html shtml;
     text/mathml                           mml;
     text/plain                            txt;
     text/vcard                            vcard vcf;
