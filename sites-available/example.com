@@ -28,7 +28,7 @@ server {
   # Path for static files
   root /sites/example.com/public;
 
-  #Specify a charset
+  # Specify a charset
   charset utf-8;
 
   # Custom 404 page
