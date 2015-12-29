@@ -7,5 +7,10 @@
 
 server {
   listen 80 default_server;
+
+  # If you're using HTTPS, uncomment the following directives
+  # listen 443 ssl default_server;
+  # include h5bp/directive-only/ssl.conf;
+
   return 444;
 }
