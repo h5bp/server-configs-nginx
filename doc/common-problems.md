@@ -114,7 +114,7 @@ With the above config, a request for `/css/main.css`, assuming the file exists,
 would be served directly by nginx whereas a request for `/application/user.css`
 would be processed by php.
 
-it is tempting to add h5bp's basic ruleset by simply appending it in
+It is tempting to add h5bp's basic ruleset by simply appending it in
 the server context:
 
 	server {
