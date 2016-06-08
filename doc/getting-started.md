@@ -17,8 +17,8 @@ the config file originally present, and use the same user:
 Apply to the runtime config file:
 
     // /etc/nginx/nginx.conf
-	#user www www;
-	user www-data www-data;
+    #user www www;
+    user www-data www-data;
 
 ## Configure logs and pid file
 
@@ -76,16 +76,16 @@ Verify the config and restart nginx to apply the changes.
 
 To verify nginx config (Tests default nginx config file)
 
-	nginx -t 
+    nginx -t 
 
 **OR**
 
 To verify a particular nginx config file
-	
-	nginx -t -c nginx.conf	
-	
+    
+    nginx -t -c nginx.conf
+    
 This will test the nginx config file and throws error if any. Otherwise test is successful and you can restart nginx.
 
 Finally reload nginx to apply the changes.
-	
-	/etc/init.d/nginx reload
+    
+    /etc/init.d/nginx reload
