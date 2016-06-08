@@ -14,8 +14,8 @@ server {
 }
 
 server {
-  listen [::]:443 ssl spdy;
-  listen 443 ssl spdy;
+  listen [::]:443 ssl http2;
+  listen 443 ssl http2;
 
   # listen on the wrong host
   server_name www.example.com;
@@ -28,12 +28,12 @@ server {
 
 server {
 
-  # listen [::]:443 ssl spdy accept_filter=dataready;  # for FreeBSD
-  # listen 443 ssl spdy accept_filter=dataready;  # for FreeBSD
-  # listen [::]:443 ssl spdy deferred;  # for Linux
-  # listen 443 ssl spdy deferred;  # for Linux
-  listen [::]:443 ssl spdy;
-  listen 443 ssl spdy;
+  # listen [::]:443 ssl http2 accept_filter=dataready;  # for FreeBSD
+  # listen 443 ssl http2 accept_filter=dataready;  # for FreeBSD
+  # listen [::]:443 ssl http2 deferred;  # for Linux
+  # listen 443 ssl http2 deferred;  # for Linux
+  listen [::]:443 ssl http2;
+  listen 443 ssl http2;
 
   # The host name to respond to
   server_name example.com;
