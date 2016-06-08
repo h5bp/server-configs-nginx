@@ -36,12 +36,12 @@ where logs should be stored:
 
 And:
 
-    // /etc/nginx/h5bp/expires.conf
+    // /etc/nginx/h5bp/location/expires.conf
     access_log logs/static.log;
 
 To:
 
-    // /etc/nginx/h5bp/expires.conf
+    // /etc/nginx/h5bp/location/expires.conf
     access_log /var/log/nginx/static.log;
 
 Or, setup a symlink to point at the right place:
