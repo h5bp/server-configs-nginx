@@ -41,6 +41,14 @@ Or, setup a symlink to point at the right place:
 
 The location of the pid file should also be checked and corrected if necessary.
 
+Check your config before trying to start nginx:
+
+    nginx -t
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+You will need to address any problems mentioned before continuing.
+
 ## Creating a site definition
 
 An example server definition is provided in `sites-available/example.com`. Copy the file to
