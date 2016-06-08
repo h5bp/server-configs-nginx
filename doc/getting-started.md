@@ -47,7 +47,14 @@ Check your config before trying to start nginx:
     nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
     nginx: configuration file /etc/nginx/nginx.conf test is successful
 
-You will need to address any problems mentioned before continuing.
+If you see:
+
+    nginx -t
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: [emerg] open() "/usr/share/nginx/log/access.log" failed (2: No such file or directory)
+    nginx: configuration file /etc/nginx/nginx.conf test failed
+
+Or similar, there is still a problem to resolve before continuing.
 
 ## Creating a site definition
 
