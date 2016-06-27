@@ -7,6 +7,6 @@
 
 server {
   listen 443 ssl default_server;
-  include h5bp/direcitve-only/ssl.conf
+  include h5bp/directive-only/ssl.conf
   return 444;
 }
