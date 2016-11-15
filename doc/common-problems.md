@@ -148,7 +148,6 @@ will be a 404. The reason for this is that H5bp's basic ruleset includes, for ex
 	location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
 		expires 1M;
 		access_log off;
-		add_header Cache-Control "public";
 	}
 
 Which will _also_ capture any dynamic requests matching that url pattern and not
@@ -166,7 +165,6 @@ Modifying (all) location blocks as follows:
 
 		expires 1M;
 		access_log off;
-		add_header Cache-Control "public";
 	}
 
 Will make Nginx pass requests for files that don't exist to the application.
