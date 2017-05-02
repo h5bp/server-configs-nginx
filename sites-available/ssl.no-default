@@ -8,5 +8,10 @@
 server {
   listen 443 ssl default_server;
   include h5bp/directive-only/ssl.conf;
+
+  ssl_certificate /etc/nginx/ssl/nginx.crt;
+  ssl_certificate_key /etc/nginx/ssl/nginx.key;
+
   return 444;
 }
+
