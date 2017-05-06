@@ -8,9 +8,8 @@ server {
   # listen on both hosts
   server_name example.com www.example.com;
 
-  # and redirect to the https host (declared below)
-  # avoiding http://www -> https://www -> https:// chain.
-  return 301 https://example.com$request_uri;
+  # and redirect to the https equivalent (declared below).
+  return 301 https://$host$request_uri;
 }
 
 server {
