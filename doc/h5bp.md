@@ -81,11 +81,6 @@ if used, from optimizing HTML responses.
 
 This file contains sane-default config for setting up nginx to handle SSL traffic.
 
-### spdy.conf
-
-[SPDY](https://developers.google.com/speed/spdy/) is Google's experimental network
-protocol. Nginx provides [experimental support](http://nginx.org/en/docs/http/ngx_http_spdy_module.html) for SPDY as of version 1.5.9.
-
 ### ssl-stapling.conf
 
 [OCSP staping](http://en.wikipedia.org/wiki/OCSP_stapling) relates to handling
