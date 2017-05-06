@@ -1,5 +1,7 @@
-%%version%% (unreleased)
-------------------------
+%2.0.0 (2017-05-06)
+------------------
+
+- V2.0.0. [AD7six]
 
 - Add defaults to all directives in nginx.conf. [Andy Dawson]
 
