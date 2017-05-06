@@ -6,7 +6,9 @@
 # returning 444 "no response".
 
 server {
+  listen [::]:443 ssl default_server;
   listen 443 ssl default_server;
+  server_name _;
   include h5bp/directive-only/ssl.conf;
   return 444;
 }
