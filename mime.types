@@ -32,6 +32,7 @@ types {
     audio/ogg                             oga ogg opus;
     audio/x-realaudio                     ra;
     audio/x-wav                           wav;
+    audio/x-matroska                      mka;
     image/bmp                             bmp;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
@@ -53,6 +54,7 @@ types {
     video/x-ms-asf                        asf asx;
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
+    video/x-matroska                      mkv mk3d;
 
     # Serving `.ico` image files with a different media type
     # prevents Internet Explorer from displaying then as images:
