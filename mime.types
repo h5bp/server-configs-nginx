@@ -9,7 +9,10 @@ types {
     # Normalize to standard type.
     # https://tools.ietf.org/html/rfc7946#section-12
     application/geo+json                  geojson;
-    application/xml                       rdf xml;
+    application/xml                       xml;
+    # Normalize to standard type.
+    # https://tools.ietf.org/html/rfc3870#section-2
+    application/rdf+xml                   rdf;
 
 
   # JavaScript
