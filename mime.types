@@ -73,20 +73,12 @@ types {
 
   # Web fonts
 
-    application/font-woff                 woff;
-    application/font-woff2                woff2;
+    font/woff                             woff;
+    font/woff2                            woff2;
     application/vnd.ms-fontobject         eot;
-
-    # Browsers usually ignore the font media types and simply sniff
-    # the bytes to figure out the font type.
-    # https://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
-    #
-    # However, Blink and WebKit based browsers will show a warning
-    # in the console if the following font types are served with any
-    # other media types.
-
-    application/x-font-ttf                ttc ttf;
-    font/opentype                         otf;
+    font/ttf                              ttf;
+    font/collection                       ttc;
+    font/otf                              otf;
 
 
   # Other
