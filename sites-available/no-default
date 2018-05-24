@@ -7,5 +7,6 @@
 
 server {
   listen [::]:80 default_server deferred;
+  listen :80 default_server deferred;
   return 444;
 }
