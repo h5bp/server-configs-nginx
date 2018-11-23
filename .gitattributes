@@ -1,0 +1,13 @@
+# Automatically normalize line endings for all text-based files
+# https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+
+* text=auto
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Make GitHub's language statistics treat the `*.conf` files as
+# Nginx configuration files
+#
+# https://github.com/github/linguist/blob/master/README.md
+
+*.conf linguist-language=Nginx
