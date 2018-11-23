@@ -17,9 +17,9 @@ types {
 
   # JavaScript
 
-    # Normalize to standard type.
-    # https://tools.ietf.org/html/rfc4329#section-7.2
-    application/javascript                js;
+    # Servers should use text/javascript for JavaScript resources.
+    # https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
+    text/javascript                       js mjs;
 
 
   # Manifest files
@@ -37,6 +37,7 @@ types {
     audio/ogg                             oga ogg opus;
     audio/x-realaudio                     ra;
     audio/x-wav                           wav;
+    audio/x-matroska                      mka;
     image/bmp                             bmp;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
@@ -58,6 +59,7 @@ types {
     video/x-ms-asf                        asf asx;
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
+    video/x-matroska                      mkv mk3d;
 
     # Serving `.ico` image files with a different media type
     # prevents Internet Explorer from displaying then as images:
@@ -78,20 +80,12 @@ types {
 
   # Web fonts
 
-    application/font-woff                 woff;
-    application/font-woff2                woff2;
+    font/woff                             woff;
+    font/woff2                            woff2;
     application/vnd.ms-fontobject         eot;
-
-    # Browsers usually ignore the font media types and simply sniff
-    # the bytes to figure out the font type.
-    # https://mimesniff.spec.whatwg.org/#matching-a-font-type-pattern
-    #
-    # However, Blink and WebKit based browsers will show a warning
-    # in the console if the following font types are served with any
-    # other media types.
-
-    application/x-font-ttf                ttc ttf;
-    font/opentype                         otf;
+    font/ttf                              ttf;
+    font/collection                       ttc;
+    font/otf                              otf;
 
 
   # Other
