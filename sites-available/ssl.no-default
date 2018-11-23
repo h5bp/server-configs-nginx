@@ -8,6 +8,6 @@
 server {
   listen [::]:443 ssl default_server;
   listen 443 ssl default_server;
-  include h5bp/directive-only/ssl.conf;
+  include h5bp/security/ssl_policy.conf;
   return 444;
 }
