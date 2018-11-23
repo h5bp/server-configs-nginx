@@ -43,6 +43,9 @@ webserver on debian:
 .
 ├── doc
 ├── h5bp
+  ├── basic.conf
+  ├── location
+	└── ...
 ├── sites-available
 	└── example.com
 ├── sites-enabled
@@ -55,8 +58,20 @@ Below is a general description of each section
 ### h5bp
 
 This directory contains config snippets (mixins) to be included as desired.
-There is more information available about the individual files in
-[About h5bp](h5bp.md).
+
+There are two types of config files provided, individual config snippets and
+combined config files which provide convenient defaults.
+
+* `basic.conf`
+
+This file loads a small subset of the rules provided by this repository to add
+expires headers, allow cross domain fonts and protect system files from web
+access.
+
+* `location` folder
+
+Files in this folder contain one or more location directives. They are intended
+to be loaded in the server context (or, in a nested location block).
 
 ### sites-available
 
