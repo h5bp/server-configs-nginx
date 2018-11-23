@@ -13,14 +13,15 @@ the project, which makes it readily available for offline reading and provides a
 useful starting point for any documentation you want to write about your project.
 
 
-## Contributing to this project
+## Contributing
 
-Anyone and everyone is welcome to contribute, but please take a moment to review
-the [contributing guidelines](CONTRIBUTING.md).
+Anyone is welcome to [contribute](.github/CONTRIBUTING.md),
+however, if you decide to get involved, please take a moment to review
+the [guidelines](.github/CONTRIBUTING.md):
 
-* [Bug reports](CONTRIBUTING.md#bugs)
-* [Feature requests](CONTRIBUTING.md#features)
-* [Pull requests](CONTRIBUTING.md#pull-requests)
+* [Bug reports](.github/CONTRIBUTING.md#bugs)
+* [Feature requests](.github/CONTRIBUTING.md#features)
+* [Pull requests](.github/CONTRIBUTING.md#pull-requests)
 
 
 ## Acknowledgements

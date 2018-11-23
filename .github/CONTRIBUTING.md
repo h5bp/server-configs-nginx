@@ -1,10 +1,13 @@
 # Contributing to Nginx Server Configs
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+♥ [Nginx Server Configs](https://github.com/h5bp/server-configs-nginx) and
+want to get involved? Thanks! There are plenty of ways you can help!
 
-Following these guidelines helps to communicate that you respect the time
-of the developers managing and developing this open source project. In return,
+First of all, please take a moment to review this document in order to make
+the contribution process easy and effective for everyone involved.
+
+Following these guidelines helps to communicate that you respect the time of
+the developers managing and developing this open source project. In return,
 they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
@@ -38,7 +41,7 @@ Guidelines for bug reports:
    latest `master` or development branch in the repository.
 
 3. **Isolate the problem** &mdash; ideally create a [reduced test
-   case](https://css-tricks.com/6263-reduced-test-cases/) and a live example.
+   case](https://css-tricks.com/reduced-test-cases/) and a live example.
 
 A good bug report shouldn't leave others needing to chase you up for more
 information. Please try to be as detailed as possible in your report. What is
@@ -90,8 +93,8 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Adhering to the following this process is the best way to get your work
 included in the project:
 
-1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
-   and configure the remotes:
+1. [Fork](https://help.github.com/articles/fork-a-repo) the project, clone your
+   fork, and configure the remotes:
 
    ```bash
    # Clone your fork of the repo into the current directory
@@ -119,7 +122,7 @@ included in the project:
 4. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
    or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
+   [interactive rebase](https://help.github.com/articles/about-git-rebase)
    feature to tidy up your commits before making them public.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
@@ -137,5 +140,5 @@ included in the project:
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description.
 
-**IMPORTANT**: By submitting a patch, you agree to allow the project owner to
-license your work under the same license as that used by the project.
+**IMPORTANT**: By submitting a patch, you agree to allow the project owners to
+license your work under the terms specified in the [MIT License](../LICENSE.txt).
