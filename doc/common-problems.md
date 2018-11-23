@@ -10,7 +10,7 @@ Depending on the server architecture, it's possible to get the following error:
 > could not build the types_hash, you should increase either
 > types_hash_max_size: 1024 or types_hash_bucket_size: 32
 
-Nginx uses [hash tables](http://nginx.org/en/docs/hash.html) to speed up certain
+Nginx uses [hash tables](https://nginx.org/en/docs/hash.html) to speed up certain
 tasks, usually the default value is sufficient but depending on the actual server
 config this error might be encountered. The solution is to do exactly what the
 error message suggests, by adding to nginx.conf the following:

@@ -15,7 +15,7 @@
 
 ## Related projects
 
-* [HTML5 Boilerplate](http://html5boilerplate.com) — professional front-end
+* [HTML5 Boilerplate](https://html5boilerplate.com) — professional front-end
   template.
 * [Server configs](https://github.com/h5bp/server-configs) — Configs for
   other web servers.

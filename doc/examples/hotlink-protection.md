@@ -9,7 +9,7 @@ assets.
 ## valid_referers
 
 the simplest way to protect assets from hotlinking is to use
-[valid_referers](http://nginx.org/en/docs/http/ngx_http_referer_module.html).
+[valid_referers](https://nginx.org/en/docs/http/ngx_http_referer_module.html).
 It's easy to use, this would be included in a relevant location block:
 
 	valid_referers none blocked example.com *.example.com;
@@ -19,7 +19,7 @@ It's easy to use, this would be included in a relevant location block:
 
 ## secure_link
 
-The [secure_link module](http://nginx.org/en/docs/http/ngx_http_secure_link_module.html)
+The [secure_link module](https://nginx.org/en/docs/http/ngx_http_secure_link_module.html)
 provides a flexible, more robust means of protecting assets from being hotlinked or
 downloaded outside from outside the web itself.
 
@@ -48,7 +48,7 @@ Example nginx config:
 
 This requires implementing server-side logic to generate links of the form:
 
-    http://example.com/protected/url.ext?md5=hash&expires=timestamp
+    https://example.com/protected/url.ext?md5=hash&expires=timestamp
 
 where:
 

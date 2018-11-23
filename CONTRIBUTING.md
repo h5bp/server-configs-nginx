@@ -17,7 +17,7 @@ and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
 * Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow](http://stackoverflow.com) or IRC).
+  [Stack Overflow](https://stackoverflow.com) or IRC).
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
@@ -38,7 +38,7 @@ Guidelines for bug reports:
    latest `master` or development branch in the repository.
 
 3. **Isolate the problem** &mdash; ideally create a [reduced test
-   case](http://css-tricks.com/6263-reduced-test-cases/) and a live example.
+   case](https://css-tricks.com/6263-reduced-test-cases/) and a live example.
 
 A good bug report shouldn't leave others needing to chase you up for more
 information. Please try to be as detailed as possible in your report. What is
@@ -90,7 +90,7 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Adhering to the following this process is the best way to get your work
 included in the project:
 
-1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
+1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
 
    ```bash
@@ -117,7 +117,7 @@ included in the project:
    ```
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+   message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
    or your code is unlikely be merged into the main project. Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.

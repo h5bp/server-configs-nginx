@@ -4,13 +4,13 @@
 # How Nginx works
 
 If you're familiar with any other webserver, some aspects of
-[the way Nginx works](http://nginx.org/en/docs/http/request_processing.html)
+[the way Nginx works](https://nginx.org/en/docs/http/request_processing.html)
  can cause confusion. This document aims to highlight differences or features
 which may trip up new users.
 
 ## Nginx will only use one location block
 
-A [location block (directive)](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+A [location block (directive)](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
 defines the behavior for a given request which matches the location url pattern. The block used
 is whichever is the most specific for the given request, the rules for
 precedence can be found in [Nginx's wiki](http://wiki.nginx.org/HttpCoreModule#location).

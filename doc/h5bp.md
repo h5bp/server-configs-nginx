@@ -69,7 +69,7 @@ header to permit only a finite list of domains to make AJAX requests.
 
 ### no-transform.conf
 
-[No transform headers](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.5)
+[No transform headers](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9.5)
  prevent mobile providers from modifying/optimizing served content. This file
 contains the directive only and should be included only when it is specifically
 desired for the server response to remain unmodified.
@@ -83,11 +83,11 @@ This file contains sane-default config for setting up nginx to handle SSL traffi
 
 ### ssl-stapling.conf
 
-[OCSP staping](http://en.wikipedia.org/wiki/OCSP_stapling) relates to handling
+[OCSP staping](https://en.wikipedia.org/wiki/OCSP_stapling) relates to handling
 the revocation of SSL certificates, this config file turns on stapling using
 Google's DNS resolver.
 
 ### x-ua-compatible.conf
 
 This adds a header to force internet explorer to use the highest mode available.
-As of [Internet explorer version 11 this is no longer necessary](http://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode).
+As of [Internet explorer version 11 this is no longer necessary](https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode).
