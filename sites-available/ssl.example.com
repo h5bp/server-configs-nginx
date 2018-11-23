@@ -1,5 +1,5 @@
 # Choose between www and non-www, listen on the *wrong* one and redirect to
-# the right one -- http://wiki.nginx.org/Pitfalls#Server_Name
+# the right one -- https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#server-name-if
 #
 server {
   listen [::]:80;

@@ -13,7 +13,7 @@ which may trip up new users.
 A [location block (directive)](https://nginx.org/en/docs/http/ngx_http_core_module.html#location)
 defines the behavior for a given request which matches the location url pattern. The block used
 is whichever is the most specific for the given request, the rules for
-precedence can be found in [Nginx's wiki](http://wiki.nginx.org/HttpCoreModule#location).
+precedence can be found in [Nginx's documentation](https://nginx.org/en/docs/http/ngx_http_core_module.html#location).
 
 It is very important when writing nginx configuration files to understand that
 only one location block will be used by Nginx. When in doubt a useful technique
