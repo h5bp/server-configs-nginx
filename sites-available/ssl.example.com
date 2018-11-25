@@ -20,7 +20,8 @@ server {
   # listen on the wrong host
   server_name www.example.com;
 
-  include h5bp/security/ssl_policy.conf;
+  include h5bp/ssl/ssl_engine.conf;
+  include h5bp/ssl/policy_intermediate.conf;
 
   # and redirect to the non-www host (declared below)
   return 301 https://example.com$request_uri;
@@ -38,7 +39,8 @@ server {
   # The host name to respond to
   server_name example.com;
 
-  include h5bp/security/ssl_policy.conf;
+  include h5bp/ssl/ssl_engine.conf;
+  include h5bp/ssl/policy_intermediate.conf;
 
   # Path for static files
   root /var/www/example.com/public;

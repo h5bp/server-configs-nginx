@@ -8,6 +8,7 @@
 server {
   listen [::]:443 ssl default_server;
   listen 443 ssl default_server;
-  include h5bp/security/ssl_policy.conf;
+  include h5bp/ssl/ssl_engine.conf;
+  include h5bp/ssl/policy_intermediate.conf;
   return 444;
 }
