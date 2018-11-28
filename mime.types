@@ -114,6 +114,14 @@ types {
     application/x-redhat-package-manager  rpm;
     application/x-sea                     sea;
     application/x-shockwave-flash         swf;
+    application/x-director                dir;
+    application/x-director                dcr;
+    application/x-director                dxr;
+    application/x-director                cst;
+    application/x-director                cct;
+    application/x-director                cxt;
+    application/x-director                w3d;
+    application/x-director                swa;
     application/x-stuffit                 sit;
     application/x-tcl                     tcl tk;
     application/x-x509-ca-cert            crt der pem;
