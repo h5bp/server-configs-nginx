@@ -114,6 +114,7 @@ types {
     application/x-redhat-package-manager  rpm;
     application/x-sea                     sea;
     application/x-shockwave-flash         swf;
+    application/futuresplash              spl;
     application/x-director                dir;
     application/x-director                dcr;
     application/x-director                dxr;
