@@ -121,6 +121,7 @@ types {
     application/x-director                cct;
     application/x-director                cxt;
     application/x-director                w3d;
+    application/x-director                fgd;
     application/x-director                swa;
     application/x-stuffit                 sit;
     application/x-tcl                     tcl tk;
