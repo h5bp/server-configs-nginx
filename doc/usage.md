@@ -36,19 +36,18 @@ for a description of the required steps.
 
 ## Basic structure
 
-This repository has the following structure, which is based on the standard install for a
-webserver on debian:
+This repository has the following structure:
 
 ```
-.
-├── doc
-├── h5bp
-  ├── basic.conf
-  ├── location
-  └── ...
-├── sites-available
-	└── example.com
-├── sites-enabled
+./
+├── doc/
+├── conf.d/
+│   ├── default.conf
+│	  └── templates/
+├── h5bp/
+│   ├── basic.conf
+│   ├── location/
+│   └── ...
 ├── mime.types
 └── nginx.conf
 ```
@@ -73,15 +72,44 @@ access.
 Files in this folder contain one or more location directives. They are intended
 to be loaded in the server context (or, in a nested location block).
 
-### sites-available
+### conf.d
 
-This directory should contain all of the server definitions that are available
-for use. [About sites-available](sites-available.md).
+This directory should contain all of the server definitions.
 
-### sites-enabled
+Except if they are dot prefixed or non .conf extension, all files in this
+folder **are** loaded automatically.
 
-This directory should contain only symlinks to enable a specific `sites-available`
-server. [About sites-enabled](sites-enabled.md).
+* `templates` folder
+
+Files in this folder contain a server{} template for secure and non-secure hosts.
+They are intended to be copied in the `conf.d` folder with all `example.com` 
+occurrences changed to the target host.
+
+#### Usage
+
+```bash
+$ cd /etc/nginx/conf.d
+```
+
+* Creating a new site
+  ```bash
+  $ cp templates/example.com.conf actual-hostname.conf
+  $ sed -i 's/example.com/actual-hostname/g' actual-hostname.conf
+  ```
+
+* Enabling a site
+  ```bash
+  $ mv .actual-hostname.conf actual-hostname.conf
+  ```
+	
+* Disabling a site
+  ```bash
+  $ mv actual-hostname.conf .actual-hostname.conf
+  ```
+
+```bash
+$ /etc/init.d/nginx reload
+```
 
 ### mime.types
 
