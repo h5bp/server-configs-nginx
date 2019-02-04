@@ -1,5 +1,36 @@
-2.0.0 (2017-05-06)
-------------------
+### 3.0.0 (February 12, 2019)
+
+* ⚠️ **Breaking**: Drop support for Nginx version < 1.8.0
+  [[1f5d635](https://github.com/h5bp/server-configs-nginx/commit/1f5d6359be53e90b634ea0451b121cfbeffa4b63)]
+* ⚠️ **Breaking**: Switch from `sites-enabled`/`available` to `conf.d`
+  [[306af36](https://github.com/h5bp/server-configs-nginx/commit/306af367e97a5f177b8bc479cef416fef2508732)]
+* ⚠️ **Breaking**: Refactor `h5bp/` directives to strict atomic structure
+  [[496af1c](https://github.com/h5bp/server-configs-nginx/commit/496af1cfd535d472d8bbd2db0a322f988803741b)]
+  [[2d13505](https://github.com/h5bp/server-configs-nginx/commit/2d135053cbd96e1e74884e4395c3163b8a39602f)]
+* ⚠️ **Breaking**: Refactor and modernize TLS/SSL directives
+  [[1b2b4eb...d2531ac](https://github.com/h5bp/server-configs-nginx/compare/1b2b4eb...d2531ac)]
+* ⚠️ **Breaking**: Move common header directives from location directives to mapped values based on MIME-types
+  [[6dd4cc2](https://github.com/h5bp/server-configs-nginx/commit/6dd4cc27edafc26e73d8998ab146235774d4abdc)]
+* 🎉 Tests! Add tests and configure continuous integration to help community contributions
+  [[52e1353](https://github.com/h5bp/server-configs-nginx/commit/52e13535b46ca862d1a51d083d7696eb964fe82b)]
+* Replace location block `add_header` directives with `expires` directives
+  [[135d093](https://github.com/h5bp/server-configs-nginx/commit/135d093a7505a72810156760b23b1f03e18c8b0a)]
+* Support hashed asset names
+  [[1b2b4eb](https://github.com/h5bp/server-configs-nginx/commit/1b2b4eb2766e3be99f30c65c86c265fc07edcdad)]
+* Update many values in MIME-types table
+  [[62dbd41](https://github.com/h5bp/server-configs-nginx/commit/62dbd41aeefb063be761741098a2584f1019f586)]
+  [[08272b6](https://github.com/h5bp/server-configs-nginx/commit/08272b63c2c9d0f875480a62caa615fe20387ad7)]
+  [[9c6aad8](https://github.com/h5bp/server-configs-nginx/commit/9c6aad83a509cb9dc72cacf17a54281326dd9ca9)]
+  [[b244111](https://github.com/h5bp/server-configs-nginx/commit/b244111468ce69218acad08ccc4b79c43f88c8c9)]
+  [[94262e7](https://github.com/h5bp/server-configs-nginx/commit/94262e76103a2f69d3f66b4e92c0c0ebb3cd486b)]
+  [[b244111](https://github.com/h5bp/server-configs-nginx/commit/b244111468ce69218acad08ccc4b79c43f88c8c9)]
+  [[fe7ff95](https://github.com/h5bp/server-configs-nginx/commit/fe7ff95a7fc96315a9022f4d02c11e6264b1bb1c)]
+* Remove outdated `inline` script
+  [[8a4a1ce](https://github.com/h5bp/server-configs-nginx/commit/8a4a1ce706eb90d820f6a2ccaa23f5f55e6c056e)]
+* Improve inline comments and review documentation.
+
+
+### 2.0.0 (2017-05-06)
 
 - V2.0.0. [AD7six]
 
@@ -390,8 +421,7 @@
 
 - Correct bad link. [Andy Dawson]
 
-1.0.0 (2014-10-24)
-------------------
+### 1.0.0 (2014-10-24)
 
 - V1.0.0. [AD7six]
 
