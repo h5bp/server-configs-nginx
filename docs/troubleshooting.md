@@ -1,7 +1,6 @@
 [Nginx Server Configs homepage](https://github.com/h5bp/server-configs-nginx)
- | [Documentation table of contents](TOC.md)
 
-# Common Problems
+# Troubleshooting
 
 ## types_hash errors
 

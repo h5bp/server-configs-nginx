@@ -1,5 +1,4 @@
 [Nginx Server Configs homepage](https://github.com/h5bp/server-configs-nginx)
- | [Documentation table of contents](TOC.md)
 
 # Getting started
 
@@ -56,22 +55,8 @@ If you see:
 
 Or similar, there is still a problem to resolve before continuing.
 
-## Creating a site definition
-
-An example server definition is provided in `sites-available/example.com`. Copy the file to
-`sites-available/yourdomainname.com` and edit appropriately. Verify specifically that
-the hostname (`example.com`) and the root are specified correctly.
-
-## Enabling a site
-
-Activate the new site by linking `yourdomainname.com` into the `sites-enabled` directory:
-
-    cd /etc/nginx/sites-enabled
-    ln -s ../sites-available/yourdomainname.com .
-
-This will make the server active the next time nginx (re)starts.
-
 ## Verify config and restart nginx
+
 Verify the config and restart nginx to apply the changes.
 
 To verify nginx config (Tests default nginx config file)
@@ -88,4 +73,4 @@ This will test the nginx config file and throws error if any. Otherwise test is 
 
 Finally reload nginx to apply the changes.
     
-    /etc/init.d/nginx reload
+    nginx reload

@@ -1,3 +1,4 @@
 /logs/
-/sites-enabled/*
-!/sites-enabled/.gitkeep
+/conf.d/*.conf
+!/conf.d/.default.conf
+!/conf.d/no-ssl.default.conf
