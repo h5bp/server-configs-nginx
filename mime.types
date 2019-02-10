@@ -20,6 +20,7 @@ types {
     # Servers should use text/javascript for JavaScript resources.
     # https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguages
     text/javascript                       js mjs;
+    application/wasm                      wasm;
 
 
   # Manifest files
@@ -124,10 +125,11 @@ types {
     text/css                              css;
     text/csv                              csv;
     text/html                             htm html shtml;
-    text/markdown                         md;
+    text/markdown                         md markdown;
     text/mathml                           mml;
     text/plain                            txt;
     text/vcard                            vcard vcf;
+    text/calendar                         ics;
     text/vnd.rim.location.xloc            xloc;
     text/vnd.sun.j2me.app-descriptor      jad;
     text/vnd.wap.wml                      wml;
