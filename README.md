@@ -125,7 +125,7 @@ $ nginx reload
 
 ## Support
 
- * Nginx v**1.6.0**+
+ * Nginx v**1.8.0**+
 
 
 ## Contributing
