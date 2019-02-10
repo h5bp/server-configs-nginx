@@ -1,0 +1,42 @@
+# https://docs.travis-ci.com/
+
+services:
+  - docker
+
+addons:
+  hosts:
+    - server.localhost
+    - www-server.localhost
+    - www.server.localhost
+    - secure.server.localhost
+    - www.secure.server.localhost
+  apt:
+    packages:
+      - docker-ce
+
+install:
+  - curl -sSL https://github.com/loadimpact/k6/releases/download/v0.23.1/k6-v0.23.1-linux64.tar.gz | tar -xz
+  - mv k6-v0.23.1-linux64 k6
+  - curl -sSL https://github.com/h5bp/server-configs-test/releases/download/0.0.4/server-configs-test.tar.gz | tar -xz -C test/
+
+before_script:
+  - docker pull nginx
+  - |
+    docker run -d -p 80:80 -p 443:443 --name server \
+      -v $TRAVIS_BUILD_DIR/test/fixtures:/var/www/server.localhost \
+      -v $TRAVIS_BUILD_DIR/test/vhosts:/etc/nginx/conf.d \
+      -v $TRAVIS_BUILD_DIR/test/certs:/etc/nginx/certs \
+      -v $TRAVIS_BUILD_DIR/h5bp:/etc/nginx/h5bp \
+      -v $TRAVIS_BUILD_DIR/nginx.conf:/etc/nginx/nginx.conf \
+      -v $TRAVIS_BUILD_DIR/mime.types:/etc/nginx/mime.types \
+      nginx
+
+script:
+  - ./k6/k6 run test/lib/index.js
+  - ./k6/k6 run test/lib/precompressed-files-gzip.js
+
+after_success: ./k6/k6 run test/lib/benchmark.js
+
+after_failure:
+  - docker ps -a
+  - docker logs server
