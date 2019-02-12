@@ -10,9 +10,40 @@ accessible, if needed, even cross-domain.
 
 ## Getting Started
 
+Using the Nginx server configs repo directly has a few required steps to be able to work.
+
 * [Nginx Beginners Guide](https://nginx.org/en/docs/beginners_guide.html)
 * [Nginx Request Processing](https://nginx.org/en/docs/http/request_processing.html)
-* [How Nginx works](docs/getting-started.md) — Understanding nginx, and how it differs from other webservers.
+
+
+### Check `nginx.conf` settings
+
+The first thing to check is that the `nginx.conf` file contains appropriate values for
+your specific install. 
+
+Most specific variables are:
+* `user`
+* `error_log`
+* `pid`
+* `access_log`
+
+### Nginx test and restart
+
+* To verify Nginx config
+  ```shell
+  $ nginx -t 
+  ```
+
+* To verify Nginx config with a custom file
+  ```shell
+  $ nginx -t  -c nginx.conf
+  ```
+
+* To reload Nginx and apply new config
+  ```shell
+  $ nginx reload 
+  ```
+
 
 ### Basic structure
 
@@ -56,6 +87,8 @@ This repository has the following structure:
     This file loads a small subset of the rules provided by this repository to add
     expires headers, allow cross domain fonts and protect system files from web
     access.
+    The `basic.conf` file includes the rules which are recommended to always be
+    defined.
 
   * **`location/`**
   
@@ -70,11 +103,6 @@ This repository has the following structure:
 * **`nginx.conf`**
 
   The main nginx config file.
-
-### Other resources
-
-* [Troubleshooting](docs/troubleshooting.md) — Dealing with commonly-encountered errors.
-* [Hotlink protection](docs/hotlink-protection.md)
 
 
 ## Usage
