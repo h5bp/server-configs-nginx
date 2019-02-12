@@ -1,5 +1,7 @@
 # https://docs.travis-ci.com/
 
+language: minimal
+
 services:
   - docker
 
