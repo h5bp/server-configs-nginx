@@ -36,7 +36,7 @@ Most specific variables are:
 
 * To verify Nginx config with a custom file
   ```shell
-  $ nginx -t  -c nginx.conf
+  $ nginx -t -c nginx.conf
   ```
 
 * To reload Nginx and apply new config
@@ -102,7 +102,7 @@ This repository has the following structure:
 
 * **`nginx.conf`**
 
-  The main nginx config file.
+  The main Nginx config file.
 
 
 ## Usage
@@ -110,12 +110,12 @@ This repository has the following structure:
 ### As a reference
 
 To use as reference requires no special installation steps, download/checkout the
-repository to a convenient location and adapt your existing nginx configuration
+repository to a convenient location and adapt your existing Nginx configuration
 incorporating the desired functionality from this repository.
 
 ### Directly
 
-To use directly, replace the nginx config directory with this repository. for example:
+To use directly, replace the Nginx config directory with this repository. for example:
 
 ```shell
 nginx stop
