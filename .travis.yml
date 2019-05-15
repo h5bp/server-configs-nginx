@@ -32,7 +32,7 @@ before_script:
       nginx
 
 script:
-  - ./test/bin/k6 run test/lib/index.js -e TESTS=basic-file-access:cache-busting:custom-errors:forbidden-files:precompressed-files-gzip:rewrites:ssl
+  - ./test/bin/k6 run test/lib/index.js -e TESTS=basic-file-access:caching:cache-busting:custom-errors:forbidden-files:precompressed-files-gzip:rewrites:ssl
 
 after_success: ./test/bin/k6 run test/lib/benchmark.js
 
