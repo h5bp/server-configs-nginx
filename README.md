@@ -71,7 +71,7 @@ This repository has the following structure:
 
   * **`templates` folder**
 
-    Files in this folder contain a `server{}` template for secure and non-secure hosts.
+    Files in this folder contain a `server` template for secure and non-secure hosts.
     They are intended to be copied in the `conf.d` folder with all `example.com` 
     occurrences changed to the target host.
 

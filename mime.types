@@ -122,6 +122,7 @@ types {
     application/xhtml+xml                 xhtml;
     application/xslt+xml                  xsl;
     application/zip                       zip;
+    text/calendar                         ics;
     text/css                              css;
     text/csv                              csv;
     text/html                             htm html shtml;
@@ -129,7 +130,6 @@ types {
     text/mathml                           mml;
     text/plain                            txt;
     text/vcard                            vcard vcf;
-    text/calendar                         ics;
     text/vnd.rim.location.xloc            xloc;
     text/vnd.sun.j2me.app-descriptor      jad;
     text/vnd.wap.wml                      wml;
