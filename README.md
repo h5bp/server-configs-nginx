@@ -64,14 +64,14 @@ This repository has the following structure:
 
 * **`conf.d/`**
 
-  This directory should contain all of the server definitions.
+  This directory should contain all of the `server` definitions.
   
-  Except if they are dot prefixed or non .conf extension, all files in this
+  Except if they are dot prefixed or non `.conf` extension, all files in this
   folder **are** loaded automatically.
 
   * **`templates` folder**
 
-    Files in this folder contain a `server{}` template for secure and non-secure hosts.
+    Files in this folder contain a `server` template for secure and non-secure hosts.
     They are intended to be copied in the `conf.d` folder with all `example.com` 
     occurrences changed to the target host.
 
@@ -92,8 +92,8 @@ This repository has the following structure:
 
   * **`location/`**
   
-    Files in this folder contain one or more location directives. They are intended
-    to be loaded in the server context (or, in a nested location block).
+    Files in this folder contain one or more `location` directives. They are intended
+    to be loaded in the `server` context (or, in a nested `location` block).
 
 
 * **`mime.types`**
