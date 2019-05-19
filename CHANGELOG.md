@@ -1,3 +1,19 @@
+### 3.1.0 (May 19, 2019)
+
+* Drop `Cache-Control: no-transform` usage
+  [[282d979](https://github.com/h5bp/server-configs-nginx/commit/282d979af40f34dccb852df9dcbecd42b899ef18)]
+* Disable cache expiration for empty content-type resources
+  [[c73d1ef](https://github.com/h5bp/server-configs-nginx/commit/c73d1efb60e834c57c6343745415c4b58418c934)]
+* Remove Content-Security-Policy from `basic.conf` includes
+  [[29ff09a](https://github.com/h5bp/server-configs-nginx/commit/29ff09ac950d40dd525e1b438ab2ecaf0a4be96f)]
+* Improve default Content-Security-Policy values
+  [[276af8d](https://github.com/h5bp/server-configs-nginx/commit/276af8da7bdf7c7d3708bbe5190092194b307789)]
+* Add more common DNS resolver addresses to default `resolver`
+  [[28874c3](https://github.com/h5bp/server-configs-nginx/commit/28874c33f0e778fc7687f5b3926590ce09e06c98)]
+* Pre-compressed content usage config files
+  [[8db768b](https://github.com/h5bp/server-configs-nginx/commit/8db768bd61094ad814bb56b8a2a560ccc416aef0)]
+* Improve inline comments.
+
 ### 3.0.1 (March 09, 2019)
 
 * Use regexp in MIME-types based maps
