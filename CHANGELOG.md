@@ -1,10 +1,10 @@
 ### 3.0.1 (March 09, 2019)
 
 * Use regexp in MIME-types based maps
-  [[d65cd97]](https://github.com/h5bp/server-configs-nginx/commit/d65cd977618ede702f15e084cb0f4a152e204935)]
-  [[db1601f]](https://github.com/h5bp/server-configs-nginx/commit/db1601f6064fd7d3d822618cf2e069a6b0cb8e9f)]
+  [[d65cd97](https://github.com/h5bp/server-configs-nginx/commit/d65cd977618ede702f15e084cb0f4a152e204935)]
+  [[db1601f](https://github.com/h5bp/server-configs-nginx/commit/db1601f6064fd7d3d822618cf2e069a6b0cb8e9f)]
 * Fix SVGZ compression handling
-  [[cec616a]](https://github.com/h5bp/server-configs-nginx/commit/cec616a103345ccef418a16549adee60f650cf52)]
+  [[cec616a](https://github.com/h5bp/server-configs-nginx/commit/cec616a103345ccef418a16549adee60f650cf52)]
 * Add Referrer-Policy for html document by default
   [[f600128](https://github.com/h5bp/server-configs-nginx/commit/f600128203e6319d6f3ce02e2538bf65b0ed01ea)]
 
@@ -38,7 +38,6 @@
 * Remove outdated `inline` script
   [[8a4a1ce](https://github.com/h5bp/server-configs-nginx/commit/8a4a1ce706eb90d820f6a2ccaa23f5f55e6c056e)]
 * Improve inline comments and review documentation.
-
 
 ### 2.0.0 (2017-05-06)
 
