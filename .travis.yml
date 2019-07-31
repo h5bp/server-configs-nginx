@@ -17,7 +17,7 @@ addons:
       - docker-ce
 
 install:
-  - curl -sSL https://github.com/h5bp/server-configs-test/releases/download/1.1.0/server-configs-test.tar.gz | tar -xz -C test/
+  - curl -sSL https://github.com/h5bp/server-configs-test/releases/download/1.2.1/server-configs-test.tar.gz | tar -xz -C test/
 
 before_script:
   - docker pull nginx
