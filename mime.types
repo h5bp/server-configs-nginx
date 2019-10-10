@@ -32,6 +32,8 @@ types {
 
   # Media files
 
+    application/dash+xml                  mpd;
+    application/vnd.apple.mpegurl         m3u8;
     audio/midi                            mid midi kar;
     audio/mp4                             aac f4a f4b m4a;
     audio/mpeg                            mp3;
@@ -61,11 +63,6 @@ types {
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
     video/x-matroska                      mkv mk3d;
-    
-    # https://en.wikipedia.org/wiki/HTTP_Live_Streaming
-    application/vnd.apple.mpegurl         m3u8;
-    # https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP
-    application/dash+xml                  mpd;
     
 
     # Serving `.ico` image files with a different media type
