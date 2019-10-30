@@ -1,6 +1,6 @@
 # [Nginx Server Configs](https://github.com/h5bp/server-configs-nginx)
 
-[![Build Status](https://img.shields.io/travis/h5bp/server-configs-nginx/master.svg)](https://travis-ci.org/h5bp/server-configs-nginx)
+[![Test](https://github.com/h5bp/server-configs-nginx/workflows/server/badge.svg)](https://github.com/h5bp/server-configs-nginx/actions?query=workflow%3Aserver)
 
 **Nginx Server Configs** is a collection of configuration snippets that can help
 your server improve the web site's performance and security, while also
