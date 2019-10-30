@@ -1,0 +1,28 @@
+name: server
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Test with server-configs-test
+        uses: h5bp/server-configs-test@feat/gha-v2
+        with:
+          command: test
+          server: nginx
+          root-path: /var/www/server.localhost
+          certs-path: /etc/nginx/certs
+          configs-volumes: test/vhosts:/etc/nginx/conf.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
+          tests: basic-file-access;caching;cache-busting;custom-errors;forbidden-files;precompressed-files-gzip;rewrites;ssl
+
+      - name: Benchmark
+        uses: h5bp/server-configs-test@feat/gha-v2
+        with:
+          command: benchmark
+          server: nginx
+          root-path: /var/www/server.localhost
+          certs-path: /etc/nginx/certs
+          configs-volumes: test/vhosts:/etc/nginx/conf.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
