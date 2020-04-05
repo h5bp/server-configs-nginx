@@ -41,7 +41,7 @@ Most specific variables are:
 
 * To reload Nginx and apply new config
   ```shell
-  $ nginx reload 
+  $ nginx -s reload 
   ```
 
 
@@ -118,12 +118,12 @@ incorporating the desired functionality from this repository.
 To use directly, replace the Nginx config directory with this repository. for example:
 
 ```shell
-nginx stop
+nginx -s stop
 cd /etc
 mv nginx nginx-previous
 git clone https://github.com/h5bp/server-configs-nginx.git nginx
 # install-specific edits
-nginx start
+nginx
 ```
 
 ### Manage sites
@@ -149,7 +149,7 @@ $ cd /etc/nginx/conf.d
   ```
 
 ```bash
-$ nginx reload
+$ nginx -s reload
 ```
 
 
