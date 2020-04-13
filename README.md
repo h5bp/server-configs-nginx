@@ -3,7 +3,7 @@
 [![Test](https://github.com/h5bp/server-configs-nginx/workflows/server/badge.svg)](https://github.com/h5bp/server-configs-nginx/actions?query=workflow%3Aserver)
 
 **Nginx Server Configs** is a collection of configuration snippets that can help
-your server improve the web site's performance and security, while also
+your server improve the website's performance and security, while also
 ensuring that resources are served with the correct content-type and are
 accessible, if needed, even cross-domain.
 
@@ -142,7 +142,7 @@ $ cd /etc/nginx/conf.d
   ```bash
   $ mv .actual-hostname.conf actual-hostname.conf
   ```
-	
+
 * Disabling a site
   ```bash
   $ mv actual-hostname.conf .actual-hostname.conf
@@ -171,7 +171,8 @@ the [guidelines](.github/CONTRIBUTING.md):
 
 ## Acknowledgements
 
-[Nginx Server Configs](https://github.com/h5bp/server-configs-nginx) is only possible thanks to all the awesome
+[Nginx Server Configs](https://github.com/h5bp/server-configs-nginx) is
+only possible thanks to all the awesome
 [contributors](https://github.com/h5bp/server-configs-nginx/graphs/contributors)!
 
 
