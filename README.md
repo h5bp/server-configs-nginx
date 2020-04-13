@@ -19,7 +19,7 @@ Using the Nginx server configs repo directly has a few required steps to be able
 ### Check `nginx.conf` settings
 
 The first thing to check is that the `nginx.conf` file contains appropriate values for
-your specific install. 
+your specific install.
 
 Most specific variables are:
 * `user`
@@ -31,7 +31,7 @@ Most specific variables are:
 
 * To verify Nginx config
   ```shell
-  $ nginx -t 
+  $ nginx -t
   ```
 
 * To verify Nginx config with a custom file
@@ -41,9 +41,8 @@ Most specific variables are:
 
 * To reload Nginx and apply new config
   ```shell
-  $ nginx -s reload 
+  $ nginx -s reload
   ```
-
 
 ### Basic structure
 
@@ -53,7 +52,7 @@ This repository has the following structure:
 ./
 ├── conf.d/
 │   ├── default.conf
-│	  └── templates/
+│	└── templates/
 ├── h5bp/
 │   ├── basic.conf
 │   ├── location/
@@ -64,8 +63,8 @@ This repository has the following structure:
 
 * **`conf.d/`**
 
-  This directory should contain all of the `server` definitions.
-  
+  This directory should contain all the `server` definitions.
+
   Except if they are dot prefixed or non `.conf` extension, all files in this
   folder **are** loaded automatically.
 
@@ -78,12 +77,12 @@ This repository has the following structure:
 * **`h5bp/`**
 
   This directory contains config snippets (mixins) to be included as desired.
-  
+
   There are two types of config files provided, individual config snippets and
   combined config files which provide convenient defaults.
 
   * **`basic.conf`**
-  
+
     This file loads a small subset of the rules provided by this repository to add
     expires headers, allow cross domain fonts and protect system files from web
     access.
@@ -113,9 +112,12 @@ To use as reference requires no special installation steps, download/checkout th
 repository to a convenient location and adapt your existing Nginx configuration
 incorporating the desired functionality from this repository.
 
+Download the [latest release archive](https://github.com/h5bp/server-configs-nginx/releases/latest).
+
 ### Directly
 
-To use directly, replace the Nginx config directory with this repository. for example:
+To use directly, replace the Nginx config directory with this repository.
+For example:
 
 ```shell
 nginx -s stop
