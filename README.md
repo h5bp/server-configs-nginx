@@ -42,7 +42,7 @@ Most specific variables are:
   nginx -t -c nginx.conf
   ```
 
-* To reload Nginx and apply new config
+* To reload Nginx and apply the new config
 
   ```shell
   nginx -s reload
@@ -88,7 +88,7 @@ This repository has the following structure:
   * **`basic.conf`**
 
     This file loads a small subset of the rules provided by this repository to add
-    expires headers, allow cross domain fonts and protect system files from web
+    expires headers, allow cross-domain fonts and protect system files from web
     access.
     The `basic.conf` file includes the rules which are recommended to always be
     defined.

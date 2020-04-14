@@ -8,7 +8,7 @@ Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
 
 Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
+the developers managing and developing this open-source project. In return,
 they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
@@ -41,7 +41,7 @@ Guidelines for bug reports:
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
    latest `master` or development branch in the repository.
 
-3. **Isolate the problem** &mdash; ideally create a [reduced test
+3. **Isolate the problem** &mdash; ideally, create a [reduced test
    case](https://css-tricks.com/reduced-test-cases/) and a live example.
 
 A good bug report shouldn't leave others needing to chase you up for more
@@ -95,7 +95,7 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Adhering to the following process is the best way to get your work
 included in the project:
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
+1. [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the project, clone your
    fork, and configure the remotes:
 
    ```bash
@@ -123,8 +123,8 @@ included in the project:
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/about-git-rebase/)
+   or your code is unlikely to be merged into the main project. Use Git's
+   [interactive rebase](https://help.github.com/en/github/using-git/about-git-rebase)
    feature to tidy up your commits before making them public.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
@@ -139,7 +139,7 @@ included in the project:
    git push origin <topic-branch-name>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+7. [Open a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
     with a clear title and description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
