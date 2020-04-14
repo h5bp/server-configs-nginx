@@ -22,6 +22,7 @@ The first thing to check is that the `nginx.conf` file contains appropriate valu
 your specific install.
 
 Most specific variables are:
+
 * `user`
 * `error_log`
 * `pid`
@@ -30,29 +31,32 @@ Most specific variables are:
 ### Nginx test and restart
 
 * To verify Nginx config
+
   ```shell
-  $ nginx -t
+  nginx -t
   ```
 
 * To verify Nginx config with a custom file
+
   ```shell
-  $ nginx -t -c nginx.conf
+  nginx -t -c nginx.conf
   ```
 
 * To reload Nginx and apply new config
+
   ```shell
-  $ nginx -s reload
+  nginx -s reload
   ```
 
 ### Basic structure
 
 This repository has the following structure:
 
-```
+```text
 ./
 ├── conf.d/
 │   ├── default.conf
-│	└── templates/
+│   └── templates/
 ├── h5bp/
 │   ├── basic.conf
 │   ├── location/
@@ -94,7 +98,6 @@ This repository has the following structure:
     Files in this folder contain one or more `location` directives. They are intended
     to be loaded in the `server` context (or, in a nested `location` block).
 
-
 * **`mime.types`**
 
   The mime.types file is responsible for mapping file extensions to mime types.
@@ -131,27 +134,30 @@ nginx
 ### Manage sites
 
 ```bash
-$ cd /etc/nginx/conf.d
+cd /etc/nginx/conf.d
 ```
 
 * Creating a new site
+
   ```bash
-  $ cp templates/example.com.conf .actual-hostname.conf
-  $ sed -i 's/example.com/actual-hostname/g' .actual-hostname.conf
+  cp templates/example.com.conf .actual-hostname.conf
+  sed -i 's/example.com/actual-hostname/g' .actual-hostname.conf
   ```
 
 * Enabling a site
+
   ```bash
-  $ mv .actual-hostname.conf actual-hostname.conf
+  mv .actual-hostname.conf actual-hostname.conf
   ```
 
 * Disabling a site
+
   ```bash
-  $ mv actual-hostname.conf .actual-hostname.conf
+  mv actual-hostname.conf .actual-hostname.conf
   ```
 
 ```bash
-$ nginx -s reload
+nginx -s reload
 ```
 
 
