@@ -1,3 +1,11 @@
+### 3.3.0 (January 6, 2021)
+
+* Add mime-type `image/avif` and `image/avifs`
+  [[a9aea70](https://github.com/h5bp/server-configs-nginx/commit/a9aea7038cc3c672eea0794e8af1640fd01ebc99)]
+* Add mime-type `image/apng`
+  [[ba4967f](https://github.com/h5bp/server-configs-nginx/commit/ba4967f99ea655cdf150b56b06ed390a79b555fc)]
+* Improve inline comments.
+
 ### 3.2.0 (April 14, 2020)
 
 * Stricter default for Referrer Policy `strict-origin-when-cross-origin`
