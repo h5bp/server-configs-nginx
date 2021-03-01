@@ -13,6 +13,7 @@ jobs:
       - name: Check configuration
         uses: docker://nginx:latest
         with:
+          entrypoint: nginx
           args: -c ./nginx.conf -t
 
   test:
