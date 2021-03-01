@@ -5,6 +5,16 @@ name: server
 on: [push, pull_request]
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - name: Check configuration
+        uses: docker://nginx:latest
+        with:
+          args: -c ./nginx.conf -t
+
   test:
     runs-on: ubuntu-latest
     steps:
