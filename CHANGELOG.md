@@ -1,3 +1,21 @@
+### 4.0.0 (July 31, 2021)
+
+* ⚠️ **Breaking**: End of support for Internet Explorer (`X-UA-Compatible` and `X-XSS-Protection` headers)
+  [[4556277](https://github.com/h5bp/server-configs-nginx/commit/4556277ced27fdb96874bf14d3ffe59925c7fc41)] 
+  [[836467c](https://github.com/h5bp/server-configs-nginx/commit/836467c8b57ab6788745c441fb31046ca11384e3)]
+* 🎉 Security first! Modernize TLS configuration
+  [[688348a](https://github.com/h5bp/server-configs-nginx/commit/688348a5fd991fcbe1a535e51056c420a81c9ae7)]
+* 🎉 Security first! Refresh policies-related headers usage
+  * Add Cross Origin Policies headers (COOP/COEP/CORP)
+    [[25a569d](https://github.com/h5bp/server-configs-nginx/commit/25a569d97d9634497498a4a387f1784269d998bb)]
+  * Add `Permissions-Policy` header
+    [[36310b9](https://github.com/h5bp/server-configs-nginx/commit/36310b927b167ef8561dc6407ab9707038b804c7)]
+  * Make `Content-Security-Policy` disallow 'object-src' by default
+    [[8600df1](https://github.com/h5bp/server-configs-nginx/commit/8600df101823e9fe71e4b13a4dfa4009726929b4)]
+* Add mime-type `image/jxl`
+  [[b9ef881](https://github.com/h5bp/server-configs-nginx/commit/b9ef881d62311ff7b2555472135529d07483bab6)]
+* Improve inline comments.
+
 ### 3.3.0 (January 6, 2021)
 
 * Add mime-type `image/avif` and `image/avifs`
