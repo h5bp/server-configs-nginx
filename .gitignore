@@ -2,5 +2,7 @@ logs/
 http.d/*.conf
 !http.d/.default.conf
 !http.d/no-ssl.default.conf
+conf.d/*.conf
+!conf.d/.user_example.conf
 test/*
 !test/vhosts/
