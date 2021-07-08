@@ -1,6 +1,6 @@
 logs/
-conf.d/*.conf
-!conf.d/.default.conf
-!conf.d/no-ssl.default.conf
+http.d/*.conf
+!http.d/.default.conf
+!http.d/no-ssl.default.conf
 test/*
 !test/vhosts/
