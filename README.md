@@ -54,7 +54,7 @@ This repository has the following structure:
 
 ```text
 ./
-├── conf.d/
+├── http.d/
 │   ├── default.conf
 │   └── templates/
 ├── h5bp/
@@ -67,6 +67,13 @@ This repository has the following structure:
 
 * **`conf.d/`**
 
+  Configs included in the `root` context
+
+  Except if they are dot prefixed or non `.conf` extension, all files in this
+  folder **are** loaded automatically.
+
+* **`http.d/`**
+
   This directory should contain all the `server` definitions.
 
   Except if they are dot prefixed or non `.conf` extension, all files in this
@@ -75,7 +82,7 @@ This repository has the following structure:
   * **`templates` folder**
 
     Files in this folder contain a `server` template for secure and non-secure hosts.
-    They are intended to be copied in the `conf.d` folder with all `example.com` 
+    They are intended to be copied in the `http.d` folder with all `example.com` 
     occurrences changed to the target host.
 
 * **`h5bp/`**
@@ -134,7 +141,7 @@ nginx
 ### Manage sites
 
 ```bash
-cd /etc/nginx/conf.d
+cd /etc/nginx/http.d
 ```
 
 * Creating a new site

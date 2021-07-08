@@ -28,7 +28,7 @@ jobs:
           server: nginx
           root-path: /var/www/server.localhost
           certs-path: /etc/nginx/certs
-          configs-volumes: test/vhosts:/etc/nginx/conf.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
+          configs-volumes: test/vhosts:/etc/nginx/http.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
           tests: basic-file-access;caching;cache-busting;custom-errors;forbidden-files;precompressed-files-gzip;rewrites;ssl
 
       - name: Benchmark
@@ -38,4 +38,4 @@ jobs:
           server: nginx
           root-path: /var/www/server.localhost
           certs-path: /etc/nginx/certs
-          configs-volumes: test/vhosts:/etc/nginx/conf.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
+          configs-volumes: test/vhosts:/etc/nginx/http.d;h5bp:/etc/nginx/h5bp;nginx.conf:/etc/nginx/nginx.conf;mime.types:/etc/nginx/mime.types
