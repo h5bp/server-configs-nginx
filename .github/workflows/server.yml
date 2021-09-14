@@ -1,6 +1,6 @@
-# https://help.github.com/en/actions
+# https://help.github.com/actions
 
-name: server
+name: Server CI
 
 on: [push, pull_request]
 
