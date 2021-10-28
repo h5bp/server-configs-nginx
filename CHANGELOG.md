@@ -1,3 +1,8 @@
+### 4.1.0 (October 28, 2021)
+
+* Add support for custom values import
+  [[fbdaa3f](https://github.com/h5bp/server-configs-nginx/commit/fbdaa3f867f3c8e1926df6bfe5943bfe57926ef5)]
+
 ### 4.0.0 (July 31, 2021)
 
 * ⚠️ **Breaking**: End of support for Internet Explorer (`X-UA-Compatible` and `X-XSS-Protection` headers)
