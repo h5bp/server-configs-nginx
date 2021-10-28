@@ -61,6 +61,8 @@ This repository has the following structure:
 │   ├── basic.conf
 │   ├── location/
 │   └── .../
+├── custom.d/
+│   └── .../
 ├── mime.types
 └── nginx.conf
 ```
@@ -97,6 +99,13 @@ This repository has the following structure:
   
     Files in this folder contain one or more `location` directives. They are intended
     to be loaded in the `server` context (or, in a nested `location` block).
+
+* **`custom.d/`**
+
+  This directory should contain all the custom `nginx.conf` configuration.
+
+  Except if they are dot prefixed or non `.conf` extension, all files in this
+  folder **are** [loaded](https://github.com/h5bp/server-configs-nginx/blob/fbdaa3f867f3c8e1926df6bfe5943bfe57926ef5/nginx.conf#L53) automatically.
 
 * **`mime.types`**
 
