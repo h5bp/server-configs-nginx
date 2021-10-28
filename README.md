@@ -105,7 +105,7 @@ This repository has the following structure:
   This directory should contain all the custom `nginx.conf` configuration.
 
   Except if they are dot prefixed or non `.conf` extension, all files in this
-  folder **are** [loaded](https://github.com/h5bp/server-configs-nginx/blob/fbdaa3f867f3c8e1926df6bfe5943bfe57926ef5/nginx.conf#L53) automatically.
+  folder **are** loaded automatically.
 
 * **`mime.types`**
 
