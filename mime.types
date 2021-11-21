@@ -61,7 +61,6 @@ types {
     video/x-flv                           flv;
     video/x-mng                           mng;
     video/x-ms-asf                        asf asx;
-    video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
 
     # Serving `.ico` image files with a different media type
