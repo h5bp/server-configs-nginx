@@ -1,3 +1,14 @@
+### 4.2.0 (February 24, 2022)
+
+* Extend media, font and default cache TTL to 1 year
+  [[4a22965](https://github.com/h5bp/server-configs-nginx/commit/4a229657fdad9c039529314aed0fc0ae17480829)]
+  [[3869706](https://github.com/h5bp/server-configs-nginx/commit/3869706922bf4897d20c5cc35817a1a4107d7623)]
+* Add compression support for `.ico` files
+  [[537a022](https://github.com/h5bp/server-configs-nginx/commit/537a0229a1bfa89ebc983aa0d78b62cb6998a997)]
+* Dropped legacy and non web related file types
+  [[a961768](https://github.com/h5bp/server-configs-nginx/commit/a9617688fc921e728d5dcd044db9327aa50ede79)]
+  [[175cc52](https://github.com/h5bp/server-configs-nginx/commit/175cc52e3fbd75628021df55f61f25cadca8e45c)]
+
 ### 4.1.0 (October 28, 2021)
 
 * Add support for custom values import
