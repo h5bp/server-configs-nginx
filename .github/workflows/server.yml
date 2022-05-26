@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Test with server-configs-test
-        uses: h5bp/server-configs-test@6.0.0
+        uses: h5bp/server-configs-test@6.1.0
         with:
           command: test
           server: nginx
@@ -32,7 +32,7 @@ jobs:
           tests: basic-file-access;caching;cache-busting;custom-errors;forbidden-files;precompressed-files-gzip;rewrites;ssl
 
       - name: Benchmark
-        uses: h5bp/server-configs-test@6.0.0
+        uses: h5bp/server-configs-test@6.1.0
         with:
           command: benchmark
           server: nginx
