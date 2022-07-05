@@ -39,8 +39,7 @@ types {
     audio/x-realaudio                     ra;
     audio/x-wav                           wav;
     image/apng                            apng;
-    image/avif                            avif;
-    image/avif-sequence                   avifs;
+    image/avif                            avif avifs;
     image/bmp                             bmp;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
