@@ -1,3 +1,16 @@
+### 5.0.0 (December 05, 2022)
+
+* 🎉 Significant improvement on `Cache-Control` definition and usage
+  * `Cache-Control` boilerplate with extensive control
+    [https://github.com/h5bp/server-configs-nginx/pull/319]
+  * Switch to a proper `no-cache` directive on cache expiration config
+    [https://github.com/h5bp/server-configs-nginx/pull/314]
+* Reorder and improve cache expiration `expires` map
+  [https://github.com/h5bp/server-configs-nginx/pull/324]
+* Drop `image/avif-sequence` MIME-type
+  [[4bc5275](https://github.com/h5bp/server-configs-nginx/commit/4bc5275d5a3fdb34e6298240db7215c3270a916e)]
+* Improve inline comments.
+
 ### 4.2.0 (February 24, 2022)
 
 * Extend media, font and default cache TTL to 1 year
