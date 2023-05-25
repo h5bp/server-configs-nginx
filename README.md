@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/h5bp/server-configs-nginx/workflows/server/badge.svg)](https://github.com/h5bp/server-configs-nginx/actions?query=workflow%3Aserver)
 
-**Nginx Server Configs** is a collection of configuration snippets that can help
+**Nginx Server Configs** is a collection of configuration files that can help
 your server improve the website's performance and security, while also
 ensuring that resources are served with the correct content-type and are
 accessible, if needed, even cross-domain.
@@ -48,7 +48,7 @@ Most specific variables are:
   nginx -s reload
   ```
 
-### Basic structure
+### Repository structure
 
 This repository has the following structure:
 
@@ -72,44 +72,44 @@ This repository has the following structure:
   This directory should contain all the `server` definitions.
 
   Except if they are dot prefixed or non `.conf` extension, all files in this
-  folder **are** loaded automatically.
+  directory are loaded automatically.
 
   * **`templates` folder**
 
-    Files in this folder contain a `server` template for secure and non-secure hosts.
-    They are intended to be copied in the `conf.d` folder with all `example.com` 
-    occurrences changed to the target host.
+    Files in this directory contain a `server` template for secure and non-secure
+    hosts. They are intended to be copied in the `conf.d` directory with all
+    `example.com` occurrences changed to the target host.
 
 * **`h5bp/`**
 
   This directory contains config snippets (mixins) to be included as desired.
 
-  There are two types of config files provided, individual config snippets and
+  There are two types of config files provided: individual config snippets and
   combined config files which provide convenient defaults.
 
   * **`basic.conf`**
 
     This file loads a small subset of the rules provided by this repository to add
-    expires headers, allow cross-domain fonts and protect system files from web
+    `expires` headers, allow cross-domain fonts and protect system files from web
     access.
     The `basic.conf` file includes the rules which are recommended to always be
     defined.
 
   * **`location/`**
   
-    Files in this folder contain one or more `location` directives. They are intended
-    to be loaded in the `server` context (or, in a nested `location` block).
+    Files in this directory contain one or more `location` directives. They are
+    intended to be loaded in the `server` context (or, in a nested `location` block).
 
 * **`custom.d/`**
 
   This directory should contain all the custom `nginx.conf` configuration.
 
   Except if they are dot prefixed or non `.conf` extension, all files in this
-  folder **are** loaded automatically.
+  folder are loaded automatically.
 
 * **`mime.types`**
 
-  The mime.types file is responsible for mapping file extensions to mime types.
+  The `mime.types` file is responsible for mapping file extensions to MIME types.
 
 * **`nginx.conf`**
 
