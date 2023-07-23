@@ -1,3 +1,13 @@
+### 5.0.1 (July 23, 2023)
+
+* Set `ssl_prefer_server_ciphers` to `off`
+  [https://github.com/h5bp/server-configs-nginx/pull/328]
+* Add `browsing-topics` to `Permissions-Policy` header
+  [https://github.com/h5bp/server-configs-nginx/pull/323]
+* Improve README docs
+  [https://github.com/h5bp/server-configs-nginx/pull/333]
+* Improve inline comments
+
 ### 5.0.0 (December 05, 2022)
 
 * 🎉 Significant improvement on `Cache-Control` definition and usage
