@@ -172,7 +172,7 @@ nginx -s reload
 
 ## Support
 
- * Nginx v**1.8.0**+
+ * Nginx v**1.25.0**+
 
 
 ## Contributing
