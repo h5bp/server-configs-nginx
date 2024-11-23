@@ -274,7 +274,7 @@
 - Correct syntax for keepalive_timeout. [Alan Orth]
 
   It doesn't seem to be a fatal error, but the keepalive_timeout
-  value actually requires "s" (for seconds). Another occurence of
+  value actually requires "s" (for seconds). Another occurrence of
   this was fixed in 35434b3361b04beb028f602c78a9331ef4967a0d but
   these slipped through.
 
@@ -333,7 +333,7 @@
 - Explain why everything in the sites-enabled folder is included. [Eric
   Lewis]
 
-- Fix mispelling. [Jeff Widman]
+- Fix misspelling. [Jeff Widman]
 
 - Fix mispelling. [Jeff Widman]
 
@@ -581,7 +581,7 @@
 
 - Mention try_files in server context gotcha. [AD7six]
 
-- Dynamicly handling request which match a location block. [AD7six]
+- Dynamically handling request which match a location block. [AD7six]
 
 - Add a document explaining request handling. [AD7six]
 
@@ -597,7 +597,7 @@
 
 - Add a description of nginx.conf. [AD7six]
 
-  it's not intented to be complete, merely guide users unfamiliar with
+  it's not intended to be complete, merely guide users unfamiliar with
   nginx.
 
   fixes #39
@@ -627,7 +627,7 @@
 
 - Use a more conventional location for sites. [AD7six]
 
-  it's more common (at meast IME) to use /var/www/example.com rather than
+  it's more common (at least IME) to use /var/www/example.com rather than
   creating a new root folder `sites` to put apps in.
 
 
@@ -672,7 +672,7 @@
 
 - Use a much longer ssl_session_timeout. [AD7six]
 
-  To match the settiongs from istlsfastyet.com
+  To match the settings from istlsfastyet.com
 
   Add a mention of ssl_buffer_size even though it can 't be enabled yet
 
@@ -715,7 +715,7 @@
   with IE6.
 
 
-- Move ssl config to a seperate file. [AD7six]
+- Move ssl config to a separate file. [AD7six]
 
 - Remove tcp_nodelay. [AD7six]
 
@@ -796,7 +796,7 @@
 
 - Add a doc block to no-default. [AD7six]
 
-  and remove the default_server direcdtive from example.com. Since this file
+  and remove the default_server directive from example.com. Since this file
   is likely to be the copy-and-paste file for multiple server configs,
   don't mark example.com as the default.
 
@@ -808,7 +808,7 @@
 
 - Rename conf folder to h5bp. [AD7six]
 
-  The name "conf" is potentially confusing as something which should be inclued
+  The name "conf" is potentially confusing as something which should be included
   en masse rather than a folder of config snippets.
 
   Closes #13
@@ -843,7 +843,7 @@
 
   The MIME type for the `.cur` file doesn't matter as browsers seem to
   sniff the content. However, `image/x-icon` is specified because it's
-  the one usually used for `.ico` file and because it's shorther then the
+  the one usually used for `.ico` file and because it's shorter then the
   other frequentlly used one (`image/vnd.microsoft.icon`), making the
   header size smaller.
 
@@ -896,7 +896,7 @@
 
 - Add `CONTRIBUTING.md` [Cătălin Mariș]
 
-  Providing the `CONTRIBUTING.md` file alows us to take advantage
+  Providing the `CONTRIBUTING.md` file allows us to take advantage
   of GitHub's UI and prompt contributors to read the repository's
   guidelines before creating an issue or opening a pull request:
   https://github.com/blog/1184-contributing-guidelines.
@@ -1085,7 +1085,7 @@
 
 - Handle www to non-www redirect. [Alessandro Vendruscolo]
 
-  A secundary `server` block has been added. It'll listen on the `www`
+  A secondary `server` block has been added. It'll listen on the `www`
   host and redirect to the `non-www` host.
 
 
