@@ -581,7 +581,7 @@
 
 - Mention try_files in server context gotcha. [AD7six]
 
-- dynamically handling request which match a location block. [AD7six]
+- Dynamically handling request which match a location block. [AD7six]
 
 - Add a document explaining request handling. [AD7six]
 
