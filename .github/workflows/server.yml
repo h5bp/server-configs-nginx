@@ -25,7 +25,7 @@ jobs:
         uses: grafana/setup-k6-action@v1
 
       - name: Test with server-configs-test
-        uses: h5bp/server-configs-test@8.0.0
+        uses: h5bp/server-configs-test@8.1.1
         with:
           command: test
           server: nginx
@@ -35,7 +35,7 @@ jobs:
           tests: basic-file-access;caching;cache-busting;custom-errors;forbidden-files;precompressed-files-gzip;rewrites;ssl
 
       - name: Benchmark
-        uses: h5bp/server-configs-test@8.0.0
+        uses: h5bp/server-configs-test@8.1.1
         with:
           command: benchmark
           server: nginx
