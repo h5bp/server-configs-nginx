@@ -8,7 +8,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Lint configuration using Gixy
         uses: docker://yandex/gixy:latest
